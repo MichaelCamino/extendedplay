@@ -6,16 +6,19 @@
 
 // VARIABLES
 
-$color-text-body: rgba(0, 0, 0, .8);
+$color-text-body: rgba(0, 0, 0, .9);
+$color-background-light: rgba(255, 255, 255, 0.9);
+$color-background-dark: rgba(0, 0, 0, .9);
 $color-text-headings: rgba(0, 0, 0, 1);
 $color-accent: rgba(255, 0, 0, 1);
-$color-accent-dark: rgba(185, 0, 0, 1);
-$color-accent-light: rgb(255, 121, 203);
+$color-accent-dark: darkgrey;
+$color-accent-light: rgb(220, 192, 112, 1);
 $color-link: rgb(56, 114, 221);
 $color-link-dark: rgb(38, 77, 148);
 $color-lightgrey: rgba(0, 0, 0, .4);
-$font-family-sans: 'acumin-pro', helvetica, arial;
-$font-family-serif: 'playfair-display', georgia, times;
+$font-family-sans: hypatia-sans-pro, helvetica, arial;
+$font-family-serif: ivypresto-display, serif;
+$font-family-ingredients: ivypresto-text, serif;
 
 // BREAKPOINTS 
 
