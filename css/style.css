@@ -528,11 +528,11 @@ section {
 #section-5 img.left {
   position: absolute;
   top: 8%;
-  left: -20%;
+  left: -25%;
 }
 #section-5 img.right {
   position: absolute;
-  right: -20%;
+  right: -25%;
   top: 8%;
   overflow-x: hidden;
   overflow-y: hidden;
