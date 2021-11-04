@@ -52,6 +52,14 @@ body{
         }    
 }
 
+// MAIN SECTION STYLING
+
+.site-main {
+    overflow-x: hidden;
+}
+
+// SECTION STYLIING
+
 section {
     padding: 1em 0;
     min-height: 100vh;
@@ -64,6 +72,10 @@ section {
     margin: 2em;
     border-radius: 20px;
     z-index: 2;
+
+    .row {
+        margin: 0;
+    }
 
     h2 {
         color: $color-accent-light;
@@ -93,7 +105,9 @@ section {
     width: auto;
     margin-top: 0;
     }
-
+    .button {
+        transition: 250ms ease;
+    }
     img.shaker {
         position: absolute;
         top: -10%;
@@ -142,12 +156,19 @@ section {
 }
 
 #section-3 {
-    position: relative;
+    // position: relative;
     background-color: $color-background-light;
     margin: 2em;
     border-radius: 20px;
     z-index: 2;
 
+    .row {
+        margin-bottom: 0;
+    }
+
+    .button {
+        transition: 250ms ease;
+    }
     h2 {
         color: $color-accent-light;
         font-size: 3.5em;
@@ -168,15 +189,11 @@ section {
     }
 
     img {
-        position: absolute;
-        left: -30%;
-        top: 7%;
-        max-height: 100%;
+        
     }
 }
 
 #section-4 {
-    position: relative;
     margin: 2em;
     z-index: 2;
 
@@ -198,11 +215,12 @@ section {
         margin-top: 10px;
         max-width: 90%;
     }
+    .button {
+        transition: 250ms ease;
+    }
     img {
-        position: absolute;
-        max-width: 60%;
-        right: 0;
-        top: 15%;
+        margin-left: -7em;
+        margin-bottom: -5em;
     }
 }
 
@@ -212,6 +230,7 @@ section {
     margin: 2em;
     border-radius: 20px;
     z-index: 2;
+    
 
 
     .staff {
@@ -230,8 +249,6 @@ section {
         position: absolute;
         right: -25%;
         top: 8%;
-        overflow-x: hidden;
-        overflow-y: hidden;
     }    
 
     h2 {

@@ -1,19 +1,21 @@
 /* BUTTONS */
 
 .button, button {
-    background-color: transparent;
-    color: $color-accent-light;
+    background-color: $color-accent-light;
+    color: $color-text-body;
     text-decoration: none;
     padding: 1em;
     display: inline-block;
     transition: all 250ms ease;
     border: 1px solid $color-accent-light;
-    border-radius: 8px;
+    border-radius: 15px;
     margin: 1em 0;
 
     &:hover {
-        background-color: $color-accent-light;
-        color: $color-text-body;
+        transform: scale(2);
+        border-radius: 5px;
+        transform: scale(1.2);
+        color: $color-background-light;
     }
 }
 
