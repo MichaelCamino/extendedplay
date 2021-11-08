@@ -115,7 +115,7 @@ body {
 
 [data-sectionstate="active"] .animate-slide-left {
     opacity: 1;
-    transform: translate(-200px, 0)
+    transform: translate(-200px, 0);
 }
 
 // ANIMATE SLIDE RIGHT
@@ -129,6 +129,7 @@ body {
 [data-sectionstate="active"] .animate-slide-right {
     opacity: 1;
     transform: translate(0, 0)
+    
 }
 
 // ANIMATE SLIDE RIGHT FOR SECTION 5

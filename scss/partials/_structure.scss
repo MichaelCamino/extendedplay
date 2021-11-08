@@ -99,6 +99,10 @@ section {
         margin-top: 10px;
         max-width: 90%;
     }
+
+    img {
+        box-shadow: 5px 5px 15px rgba(0,0,0,.6);
+    }
 }
 
 #section-2 {
@@ -194,6 +198,7 @@ section {
     }
 
     img {
+        box-shadow: 5px 5px 15px rgba(0,0,0,.6);
         @media (min-width: $breakpoint-small) {
             transform: scale(2);
             transform-origin: right center;
@@ -257,6 +262,7 @@ section {
     }
 
     img.left {
+        box-shadow: 5px 5px 15px rgba(0,0,0,.6);
         @media (min-width: $breakpoint-small) {
             transform: scale(4);
             transform-origin: center;

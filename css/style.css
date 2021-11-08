@@ -457,6 +457,10 @@ section {
   margin-top: 10px;
   max-width: 90%;
 }
+#section-1 img {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
 
 #section-2 {
   position: relative;
@@ -543,6 +547,10 @@ section {
   max-width: 100%;
   margin-top: 10px;
 }
+#section-3 img {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
 @media (min-width: 768px) {
   #section-3 img {
     -webkit-transform: scale(2);
@@ -603,6 +611,10 @@ section {
 #section-5 .staff {
   text-align: center;
   width: auto;
+}
+#section-5 img.left {
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 768px) {
   #section-5 img.left {
