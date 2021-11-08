@@ -7,6 +7,7 @@
         top: 1em;
         right: 1em;
         color: white;
+        border-radius: 0%;
         margin: 0;
         font-size: 1.5em;
         line-height: 1;
@@ -15,6 +16,11 @@
         background: transparent;
         border: none;
         padding: 0;
+        box-shadow: none;
+        transition: 250ms ease;
+        &:after {
+            content: none;
+        }
         &:hover {
             transform: translate(-5px, 0)
         }
