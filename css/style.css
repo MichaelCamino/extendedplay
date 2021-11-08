@@ -156,11 +156,7 @@ hr {
   margin: 1em 0;
 }
 .button:hover, button:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
   border-radius: 5px;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -639,8 +635,12 @@ section {
   border: none;
   padding: 0;
 }
+.site-header .site-nav .menu-button:hover {
+  -webkit-transform: translate(-5px, 0);
+          transform: translate(-5px, 0);
+}
 .site-header .site-nav .menu-button svg {
-  fill: white;
+  fill: #fdf0b9;
 }
 .site-header .site-nav .menu-button svg rect {
   -webkit-transition: 250ms ease-out;

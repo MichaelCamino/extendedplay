@@ -15,9 +15,12 @@
         background: transparent;
         border: none;
         padding: 0;
+        &:hover {
+            transform: translate(-5px, 0)
+        }
 
         svg {
-            fill: white;
+            fill: rgba(253, 240, 185, 1);
 
             rect {
                 transition: 250ms ease-out;

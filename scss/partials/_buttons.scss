@@ -12,9 +12,7 @@
     margin: 1em 0;
 
     &:hover {
-        transform: scale(2);
         border-radius: 5px;
-        transform: scale(1.2);
         color: $color-background-light;
     }
 }
