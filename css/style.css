@@ -742,12 +742,17 @@ section {
   z-index: 10;
 }
 .site-header .site-nav li {
-  font-size: 4vw;
+  font-size: 12vw;
   -webkit-transform: translate(10%, 0);
           transform: translate(10%, 0);
   -webkit-transition: 250ms all ease-in-out 250ms;
   transition: 250ms all ease-in-out 250ms;
   opacity: 0;
+}
+@media (min-width: 768px) {
+  .site-header .site-nav li {
+    font-size: 4vw;
+  }
 }
 .site-header .site-nav li.about {
   -webkit-transition-delay: 0.4s;

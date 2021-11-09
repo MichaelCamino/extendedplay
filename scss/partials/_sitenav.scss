@@ -56,7 +56,10 @@
     }
 
     li {
-        font-size: 4vw;
+        @media (min-width: $breakpoint-small) {
+            font-size: 4vw;
+        }
+        font-size: 12vw;
         transform: translate(10%, 0);
         transition: 250ms all ease-in-out 250ms;
         // min-width: 20vw;
