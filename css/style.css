@@ -677,6 +677,26 @@ section {
 }
 
 /* SITE-HEADER SITE-NAV */
+.site-header .site-nav a {
+  color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.site-header .site-nav a:hover {
+  color: rgba(0, 0, 0, 0.9);
+}
+.site-header .site-nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+.site-header .site-nav a:hover::after {
+  width: 100%;
+}
 .site-header .site-nav .menu-button {
   position: absolute;
   top: 1em;

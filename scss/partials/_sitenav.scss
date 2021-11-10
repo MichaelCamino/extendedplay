@@ -1,6 +1,27 @@
 /* SITE-HEADER SITE-NAV */
 
 .site-header .site-nav {
+
+    a {
+        color: $color-text-body;
+        transition: all 250ms ease-in-out;
+        &:hover {
+            color: $color-text-body;
+        }
+        &::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: $color-background-light;
+            transition: all 250ms ease-in-out;
+            
+        }
+        &:hover::after {
+            width: 100%;
+        }
+
+    }
     
     .menu-button {
         position: absolute;
@@ -59,6 +80,7 @@
         @media (min-width: $breakpoint-small) {
             font-size: 4vw;
         }
+       
         font-size: 12vw;
         transform: translate(10%, 0);
         transition: 250ms all ease-in-out 250ms;
