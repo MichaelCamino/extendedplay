@@ -675,6 +675,9 @@ section {
   background-size: cover;
   background-position: 25% 85%;
 }
+.hero .herologo {
+  margin-top: auto;
+}
 
 .hide-visually {
   position: absolute;
