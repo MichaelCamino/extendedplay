@@ -136,13 +136,13 @@ body {
 .animate-slide-right-section-5,
 [data-sectionstate="inactive"] .animate-slide-right-section-5 {
     transition: all .5s ease-in-out;
-    opacity: 0;
+    opacity: 1;
     transform: translate(0, 0);
 }
 
 [data-sectionstate="active"] .animate-slide-right-section-5 {
     opacity: 1;
-    transform: translate(200px, 0)
+    transform: translate(200px, 0);
 }
 
 
