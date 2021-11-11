@@ -764,7 +764,7 @@ section {
   -webkit-transition: 250ms all ease-out;
   transition: 250ms all ease-out;
   font-family: nimbus-sans, helvetica, arial;
-  font-weight: 400;
+  font-weight: 300;
   z-index: 10;
 }
 .site-header .site-nav li {
