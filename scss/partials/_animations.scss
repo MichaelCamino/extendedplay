@@ -118,6 +118,18 @@ body {
     transform: translate(-200px, 0);
 }
 
+.animate-slide-left-section-6,
+[data-sectionstate="inactive"] .animate-slide-left-section-6 {
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    transform: translate(100px, 0);
+}
+
+[data-sectionstate="active"] .animate-slide-left-section-6 {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 // ANIMATE SLIDE RIGHT
 .animate-slide-right,
 [data-sectionstate="inactive"] .animate-slide-right {
@@ -197,7 +209,7 @@ body {
         &:nth-child(17) { transition-delay: 1.7s; }
         &:nth-child(18) { transition-delay: 1.8s; }
         &:nth-child(19) { transition-delay: 1.9s; }
-        &:nth-child(20) { transition-delay: none; }
+        &:nth-child(20) { transition-delay: 2s; }
     }
 }
 [data-sectionstate="active"] .animate-scale-in-with-delay {
