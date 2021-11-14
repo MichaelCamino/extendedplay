@@ -79,6 +79,17 @@ body {
 
 // UTILITY / HELPER CLASSES FOR ANIMATION
 
+// OPACITY
+.animate-opacity,
+[data-sectionstate="inactive"] .animate-opacity {
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+[data-sectionstate="active"] .animate-opacity {
+    opacity: 1;
+}
+
 //  SCALE IN
 .animate-scale-in,
 [data-sectionstate="inactive"] .animate-scale-in {

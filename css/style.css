@@ -502,6 +502,12 @@ section {
     top: -20%;
   }
 }
+@media (min-width: 1250px) {
+  #section-2 img.shaker {
+    top: -40%;
+    width: 45%;
+  }
+}
 #section-2 img.drink-1 {
   position: absolute;
   width: 30%;
@@ -512,7 +518,7 @@ section {
 }
 @media (min-width: 768px) {
   #section-2 img.drink-1 {
-    opacity: 1;
+    opacity: 0.9;
     top: 50%;
   }
 }
@@ -618,6 +624,10 @@ section {
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
 }
+#section-4 img {
+  -webkit-transform: rotatey(180deg);
+          transform: rotatey(180deg);
+}
 @media (min-width: 768px) {
   #section-4 img {
     -webkit-transform: scale(1.6);
@@ -713,6 +723,7 @@ section {
   letter-spacing: 2px;
 }
 #section-6 p {
+  font-weight: 100;
   color: #d0a747;
   max-width: 100%;
   font-size: 1.3em;
@@ -737,6 +748,7 @@ section {
 }
 #section-6 .left {
   margin-bottom: -6em;
+  z-index: 1;
   text-align: left;
 }
 @media (min-width: 768px) {
@@ -760,6 +772,13 @@ section {
     -webkit-transform: scale(2);
             transform: scale(2);
   }
+}
+#section-6 i {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+#section-6 i:hover {
+  color: #d0a747;
 }
 
 /* HERO SECTION */
@@ -1064,6 +1083,17 @@ body {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+.animate-opacity,
+[data-sectionstate=inactive] .animate-opacity {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+}
+
+[data-sectionstate=active] .animate-opacity {
+  opacity: 1;
 }
 
 .animate-scale-in,
