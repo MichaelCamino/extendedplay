@@ -773,12 +773,12 @@ section {
   overflow: hidden;
 }
 .hero .herologo {
+  width: 100%;
   height: 100vh;
-  margin-top: -3em;
 }
 @media (min-width: 768px) {
   .hero .herologo {
-    margin: auto;
+    height: auto;
   }
 }
 .hero .bg-image {
