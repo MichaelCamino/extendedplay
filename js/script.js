@@ -34,7 +34,7 @@ document.querySelectorAll('.animate-on-scroll').forEach((section) => {
 });
 
 
-// PARALLAX USING DAVID'S GIFTBAG.JS CODE
+// PARALLAX USING DAVID EFHAN'S GIFTBAG.JS CODE
 function parallax({ el, ease = "linear" }) {
     let ticking = false;
 

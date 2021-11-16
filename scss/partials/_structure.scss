@@ -124,10 +124,11 @@ section {
     .button {
         transition: 250ms ease;
     }
-    img.shaker {
+    .shaker {
         @media (min-width: $breakpoint-small) {
-            opacity: 1;
+            
             top: -20%;
+            width: 50%;
         }
         @media (min-width: $breakpoint-large) {
             top: -40%;
@@ -138,19 +139,18 @@ section {
         left: -20%;
         width: 50%;
         z-index: 2;
-        opacity: .3;
         }
 
-    img.drink-1 {
+    .drink-1 {
         @media (min-width: $breakpoint-small) {
-            opacity: .9;
-            top: 50%;
+            top: 70%;
+            right: -20%;
+            width: 30%;
         }
         position: absolute;
         width: 30%;
         right: -5%;
         top: 70%;
-        opacity: .3;
         z-index: 2;
     }    
 
@@ -260,7 +260,8 @@ section {
         transition: 250ms ease;
     }
     img {
-        transform: rotatey(180deg);
+        transform: rotateY(180deg);
+        opacity: .3;
         @media (min-width: $breakpoint-small) {
             transform: scale(1.6);
             margin-left: -4em;
@@ -391,6 +392,7 @@ section {
         text-align: right;
     }
     img {
+        opacity: .3;
         @media (min-width: $breakpoint-small) {
         margin-left: -10em;
         transform: scale(2);
@@ -400,6 +402,7 @@ section {
         transition: .4s ease;
         &:hover {
             color: $color-accent-light;
+            transform: scale(1.1);
         }
     }
 }
