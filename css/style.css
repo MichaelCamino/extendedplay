@@ -831,9 +831,6 @@ section {
   height: auto;
   z-index: -100;
   opacity: 0.4;
-  background-image: url(/img/EP_hero_pic.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 @media (min-width: 768px) {
   .hero video {
