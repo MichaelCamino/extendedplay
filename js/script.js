@@ -11,6 +11,17 @@ mymenubutton.onclick = function () {
     }
 };
 
+//STICKY NAV - CLOSE THE NAV ON STICKY HEADER NAV LINK CLICKS
+const myheadernavlinks = document.querySelectorAll(".site-header .site-nav a");
+
+for (var i = 0; i < myheadernavlinks.length; i++) {
+    myheadernavlinks[i].addEventListener('click', function () {
+        mysitenav.setAttribute('data-navstate', 'closed');
+    });
+};
+
+
+
 // REVEAL ON SCROLL JS
 // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVOR
 

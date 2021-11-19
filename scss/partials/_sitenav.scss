@@ -42,13 +42,13 @@
         &:after {
             content: none;
         }
-        &:hover {
-            transform: translate(-5px, 0)
-        }
+        
 
         svg {
             fill: rgba(253, 240, 185, 1);
-
+            &:hover {
+                fill: $color-accent-light;
+            }
             rect {
                 transition: 250ms ease-out;
             }
@@ -102,6 +102,14 @@
 
     li.coffee {
         transition-delay: 1s;
+    }
+
+    li.staff {
+        transition-delay: 1.2s;
+    }
+
+    li.visit {
+        transition-delay: 1.4s;
     }
 
     .menubar-top,

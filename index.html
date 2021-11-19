@@ -34,9 +34,9 @@
                 <span class="hide-visually">Menu</span>
                 <svg width="30" height="30">
                     <title>Menu</title>
-                    <rect class="menubar-top" y="0" width="30" height="3"></rect>
-                    <rect class="menubar-middle" y="8" width="30" height="3"></rect>
-                    <rect class="menubar-bottom " y="16" width="30" height="3"></rect>
+                    <rect class="menubar-top" y="0" width="30" height="2"></rect>
+                    <rect class="menubar-middle" y="8" width="30" height="2"></rect>
+                    <rect class="menubar-bottom " y="16" width="30" height="2"></rect>
                 </svg>
             </button>
             <ul>
@@ -44,7 +44,9 @@
                 <li class="about"><a href="#section-1">About</a></li>
                 <li class="menu"><a href="#section-2">Menu</a></li>
                 <li class="playlist"><a href="#section-3">Playlist</a></li>
-                <li class="coffee"><a href="3section-4l">Coffee</a></li>
+                <li class="coffee"><a href="#section-4">Coffee</a></li>
+                <li class="staff"><a href="#section-5">Staff</a></li>
+                <li class="visit"><a href="#section-6">Visit</a></li>
             </ul>
         </nav>
     </header>
@@ -58,7 +60,13 @@
         <section id="section-1" class="animate-on-scroll">
             <div class="container">
                 <div class="row">
-                    <div class="one-half animate-drop-in-with-delay">
+                    <div class="one-half">
+                        <video autoplay loop>
+                            <source src="img/vertical_turntable.mp4">
+                        </video>
+                        <!-- <img src="img/section_1_pic.gif" alt="Bar Picture 1"> -->
+                    </div>
+                    <div class="one-half line animate-drop-in-with-delay">
                         <h2 class="headline">Some Things To Note</h3>
                             <h3 class="subheadline">A little more than a bar
                         </h2>
@@ -68,16 +76,8 @@
                             really isn’t a bar. Its a house. Its a living room. Its a den. Its a place
                             where you come to meet your friends, a place to listen to music on
                             the record machine, and a place to maybe have a whiskey or two.</p>
+                    </div>
 
-                        <p>
-                            Contrary to popular belief, we don’t go to bars to drink. We go to
-                            bars to see old friends. To meet new friends. We plop our butts
-                            onto those stools, because we long for a little company in our lives. Come have a treat with
-                            us.</p>
-                    </div>
-                    <div class="one-half">
-                        <img src="img/section_1_pic.gif" alt="Bar Picture 1">
-                    </div>
                 </div>
             </div>
         </section>
@@ -127,11 +127,7 @@
         <section id="section-3" class="animate-on-scroll">
             <div class="container">
                 <div class="row">
-                    <div class="two-thirds">
-                        <div class="animate-slide-right">
-                            <img src="img/section_3_pic.gif" alt="Bar Picture 2">
-                        </div>
-                    </div>
+
                     <div class="one-third animate-drop-in-with-delay">
                         <h2 class="headline">Weekly</h3>
                             <h3 class="subheadline">Playlist
@@ -142,6 +138,14 @@
                             but maybe our collection of vinyl can help you out.</p>
                         <div><a href="https://www.discogs.com/user/EPbar/collection" target="_blank"
                                 rel="noopener noreferrer" class="button playlist"><span>RECORDS</span></a></div>
+                    </div>
+                    <div class="two-thirds">
+                        <div class="animate-slide-left-section-3">
+                            <video loop autoplay>
+                                <source src="img/turntable1.mp4">
+                            </video>
+                            <!-- <img src="img/section_3_pic.gif" alt="Bar Picture 2"> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,7 +215,7 @@
                     <div class="one-third left">
                         <div class="animate-slide-right">
                             <h2>Contact Us</h2>
-                            <h3>808-555-1234</h3>
+                            <h3><a href="tel:+18087249240">808-555-1234</a></h3>
                             <ul>
                                 <li class="facebook-icon"><a href="#"><i class="fab fa-facebook"></i></a></li>
                                 <li class="instagram-icon"><a href="https://www.instagram.com/ep.bar/?hl=en"
@@ -242,7 +246,7 @@
     </main>
 
     <footer class="site-footer">
-        <div><a href="#" class="button playlist"><span>BACK UP</span></a></div>
+        <div><a href="#top" class="button playlist"><span>BACK UP</span></a></div>
     </footer>
 
     <!-- SMOOTH SCROLL BY CHRIS FERDINAND -->
