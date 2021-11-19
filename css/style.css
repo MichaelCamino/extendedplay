@@ -681,27 +681,21 @@ section {
 #section-5 img.left {
   -webkit-transform: translate(14.3em);
           transform: translate(14.3em);
-  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 768px) {
   #section-5 img.left {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    margin: auto;
+    -webkit-transform: scale(2) translate(-5.5em, 0);
+            transform: scale(2) translate(-5.5em, 0);
   }
 }
 #section-5 img.right {
   -webkit-transform: translate(-14.3em);
           transform: translate(-14.3em);
-  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
-          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
 }
 @media (min-width: 768px) {
   #section-5 img.right {
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    margin: auto;
+    -webkit-transform: scale(2) translate(5.5em, 0);
+            transform: scale(2) translate(5.5em, 0);
   }
 }
 #section-5 h2 {
@@ -830,7 +824,6 @@ section {
   width: auto;
   height: auto;
   z-index: -10;
-  opacity: 0.4;
 }
 @media (min-width: 768px) {
   .hero video {
@@ -1205,6 +1198,21 @@ body {
   opacity: 1;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
+}
+
+.animate-slide-left-section-5,
+[data-sectionstate=inactive] .animate-slide-left-section-5 {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+[data-sectionstate=active] .animate-slide-left-section-5 {
+  opacity: 1;
+  -webkit-transform: translate(100px, 0);
+          transform: translate(100px, 0);
 }
 
 .animate-slide-left-section-6,

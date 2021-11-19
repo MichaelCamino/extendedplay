@@ -314,21 +314,17 @@ section {
 
     img.left {
         transform: translate(14.3em);
-        box-shadow: 3px 3px 10px rgba(0,0,0,.6);
         @media (min-width: $breakpoint-small) {
-            transform: scale(2);
-            margin: auto;
+            transform: scale(2) translate(-5.5em, 0);
         }
     
     }
 
     img.right {
         transform: translate(-14.3em);
-        box-shadow: 3px 3px 10px rgba(0,0,0,.6);
+        // box-shadow: 3px 3px 10px rgba(0,0,0,.6);
         @media (min-width: $breakpoint-small) {
-            transform: scale(2);
-            margin: auto;
-            
+            transform: scale(2) translate(5.5em, 0);
         }
     }    
 
@@ -456,7 +452,6 @@ section {
         width: auto;
         height: auto;
         z-index: -10;
-        opacity: .4;
         // background-image: url(/img/EP_hero_pic.jpg);
         // background-repeat: no-repeat;
         // background-size: cover;
