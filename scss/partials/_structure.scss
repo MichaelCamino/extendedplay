@@ -444,6 +444,8 @@ section {
     overflow: hidden;
 
     video {
+        display: none;
+        @media (min-width: $breakpoint-small) {
         position: absolute;
         top: 0;
         left: -35em;
@@ -451,41 +453,41 @@ section {
         min-height: 100%;
         width: auto;
         height: auto;
-        z-index: -10;
+        z-index: -20;
+        opacity: 1;
+        display: initial;
+        }
         // background-image: url(/img/EP_hero_pic.jpg);
         // background-repeat: no-repeat;
         // background-size: cover;
-        @media (min-width: $breakpoint-small) {
-            left: 0;
-            
-        }
+        
     }
 
     .herologo {
         width: 100%;
         height: 100vh;
+        z-index: 2;
         @media (min-width: $breakpoint-small) {
             height: auto;
         }
     }
 
 
-    // .bg-image {
-    //     @media (min-width: $breakpoint-small) {
-    //         background-position: 25% 85%;
-    //     }
-    //     opacity: .4;
-    //     width: 100%;
-    //     height: 100vh;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    //     z-index: -1;
-    //     background-image: url(../img/EP_hero_pic.jpg);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: 28% 85%;
-    // }
+    .bg-image {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        background-image: url(../img/EP_hero_pic.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 15% 85%;
+        @media (min-width: $breakpoint-small) {
+            display: none;
+    }
+}
 }
