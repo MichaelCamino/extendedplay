@@ -282,6 +282,16 @@ section {
     .button {
         transition: 250ms ease;
     }
+
+    #coffee {
+        width: 100%;
+        height: auto;
+        transform: scale(1.2);
+        opacity: .4;
+        @media (min-width: $breakpoint-small) {
+            transform: scale(2);
+        }
+    }
     img {
         transform: rotateY(180deg);
         opacity: .3;

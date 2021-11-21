@@ -644,6 +644,19 @@ section {
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
 }
+#section-4 #coffee {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.4;
+}
+@media (min-width: 768px) {
+  #section-4 #coffee {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+}
 #section-4 img {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
