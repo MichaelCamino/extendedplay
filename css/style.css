@@ -27,7 +27,7 @@
 
 /* BASE TEXT COLORS */
 body {
-  color: rgba(0, 0, 0, 0.9);
+  color: #191919;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -350,7 +350,7 @@ body {
 
 /* SITE STRUCTURE */
 body {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #191919;
 }
 
 .site-header {
@@ -488,44 +488,8 @@ section {
 #section-2 .menu {
   text-align: center;
   width: auto;
+  margin: auto;
   margin-top: 2em;
-}
-#section-2 .button {
-  -webkit-transition: 250ms ease;
-  transition: 250ms ease;
-}
-#section-2 .shaker {
-  position: absolute;
-  top: -10%;
-  left: -20%;
-  width: 50%;
-  z-index: 2;
-}
-@media (min-width: 768px) {
-  #section-2 .shaker {
-    top: -20%;
-    width: 50%;
-  }
-}
-@media (min-width: 1250px) {
-  #section-2 .shaker {
-    top: -30%;
-    width: 45%;
-  }
-}
-#section-2 .drink-1 {
-  position: absolute;
-  width: 30%;
-  right: -55%;
-  top: 70%;
-  z-index: 2;
-}
-@media (min-width: 768px) {
-  #section-2 .drink-1 {
-    top: 70%;
-    right: -20%;
-    width: 30%;
-  }
 }
 #section-2 h2 {
   color: #d0a747;
@@ -555,6 +519,41 @@ section {
   font-family: ivypresto-text, serif;
   font-weight: 100;
   margin-bottom: auto;
+}
+
+.button {
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
+}
+
+.shaker {
+  position: absolute;
+  opacity: 0.3;
+  top: 10em;
+  left: -10em;
+  max-width: 90%;
+}
+@media (min-width: 768px) {
+  .shaker {
+    top: -10em;
+    left: -28em;
+    max-width: 80%;
+  }
+}
+
+.drink-1 {
+  position: absolute;
+  width: 30%;
+  right: -55%;
+  top: 70%;
+  z-index: 2;
+}
+@media (min-width: 768px) {
+  .drink-1 {
+    top: 70%;
+    right: -20%;
+    width: 30%;
+  }
 }
 
 #section-3 {
@@ -648,12 +647,12 @@ section {
   height: auto;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  opacity: 0.4;
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   #section-4 #coffee {
-    -webkit-transform: scale(1.6);
-            transform: scale(1.6);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
 }
 #section-4 img {
@@ -835,6 +834,7 @@ section {
   margin-top: 3em;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  opacity: 0.3;
 }
 @media (min-width: 768px) {
   #section-6 #strawberrydrink {
@@ -909,12 +909,12 @@ section {
 
 /* SITE-HEADER SITE-NAV */
 .site-header .site-nav a {
-  color: rgba(0, 0, 0, 0.9);
+  color: #191919;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 .site-header .site-nav a:hover {
-  color: rgba(0, 0, 0, 0.9);
+  color: #191919;
 }
 .site-header .site-nav a::after {
   content: "";

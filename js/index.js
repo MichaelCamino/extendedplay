@@ -12,7 +12,7 @@ const animation2 = lottie.loadAnimation({
     renderer: 'svg',
     loop: false,
     autoplay: false,
-    path: 'js/EP_coffee_animation/data2.json' // the path to the animation json
+    path: 'js/EP_coffee_animation/data.json' // the path to the animation json
 });
 
 const io_options_coffee = {
@@ -39,7 +39,7 @@ document.querySelectorAll('#section-4').forEach((div) => {
 const animation3 = lottie.loadAnimation({
     container: strawberrydrink, // the dom element that will contain the animation
     renderer: 'svg',
-    loop: true,
+    loop: false,
     autoplay: false,
     path: 'js/EP_strawberrydrink/data.json' // the path to the animation json
 });
@@ -60,7 +60,38 @@ const myobserver_strawberrydrink = new IntersectionObserver(entries => {
 
         }
     });
-}, io_options_coffee);
+}, io_options_strawberrydrink);
 document.querySelectorAll('#section-6').forEach((div) => {
     myobserver_strawberrydrink.observe(div)
+});
+
+// SHAKER ANIMATION
+
+const animation4 = lottie.loadAnimation({
+    container: shaker, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'js/EP_shaker_animation/data.json' // the path to the animation json
+});
+
+const io_options_shaker = {
+    // root: document.body,
+    rootMargin: '-25% 0px -25% 0px',
+    threshold: 0
+};
+
+const myobserver_shaker = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animation4.play();
+
+        } else {
+            animation4.stop();
+
+        }
+    });
+}, io_options_shaker);
+document.querySelectorAll('#section-2').forEach((div) => {
+    myobserver_shaker.observe(div)
 });
