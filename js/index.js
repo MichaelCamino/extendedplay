@@ -1,4 +1,4 @@
-lottie.loadAnimation({
+const animation1 = lottie.loadAnimation({
     container: herologo, // the dom element that will contain the animation
     renderer: 'svg',
     loop: false,
@@ -6,31 +6,61 @@ lottie.loadAnimation({
     path: 'js/EP_logo/data.json' // the path to the animation json
 });
 
-let animationDiv = document.getElementById('coffee')
-animationDiv.style.display = 'none'
 
-lottie.loadAnimation({
+const animation2 = lottie.loadAnimation({
     container: coffee, // the dom element that will contain the animation
     renderer: 'svg',
     loop: false,
-    autoplay: true,
+    autoplay: false,
     path: 'js/EP_coffee_animation/data2.json' // the path to the animation json
 });
 
-window.addEventListener('scroll', () => {
-    // can set scroll height by changing the number
-    let scrollHeightPercent = document.documentElement.scrollHeight * 0.08
-    let currentPOS = document.documentElement.scrollTop || document.body.scrollTop
+const io_options_coffee = {
+    // root: document.body,
+    rootMargin: '-25% 0px -25% 0px',
+    threshold: 0
+};
 
-    // once the scroll height has gone past the % stated abvoe it will make the style appear
-    if (currentPOS >= scrollHeightPercent) {
-        let animationDiv = document.getElementById('coffee');
-        if (animationDiv.style.display == 'none') {
-            // stuff here
-            animationDiv.style.display = ""
+const myobserver_coffee = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animation2.play();
 
-            let bodyMotion1 = document.getElementById('section-4');
-            loader(bodyMotion1, "js/EP_coffee_animation/data2.json")
-        };
-    };
+        } else {
+            animation2.stop();
+
+        }
+    });
+}, io_options_coffee);
+document.querySelectorAll('#section-4').forEach((div) => {
+    myobserver_coffee.observe(div);
+});
+
+const animation3 = lottie.loadAnimation({
+    container: strawberrydrink, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'js/EP_strawberrydrink/data.json' // the path to the animation json
+});
+
+const io_options_strawberrydrink = {
+    // root: document.body,
+    rootMargin: '-25% 0px -25% 0px',
+    threshold: 0
+};
+
+const myobserver_strawberrydrink = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animation3.play();
+
+        } else {
+            animation3.stop();
+
+        }
+    });
+}, io_options_coffee);
+document.querySelectorAll('#section-6').forEach((div) => {
+    myobserver_strawberrydrink.observe(div)
 });

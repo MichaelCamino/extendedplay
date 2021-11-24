@@ -76,7 +76,6 @@ section {
     }
     background-color: $color-background-light;
     margin: 1em 1em 0 1em;
-    border-radius: 20px;
     z-index: 2;
     
     .row {
@@ -127,7 +126,6 @@ section {
 
 #section-2 {
     position: relative;
-
     .menu {
     text-align: center;
     width: auto;
@@ -203,7 +201,6 @@ section {
 #section-3 {
     background-color: $color-background-light;
     margin: 0 2em 2em 2em;
-    border-radius: 20px;
     z-index: 2;
 
     .row {
@@ -258,6 +255,7 @@ section {
 #section-4 {
     margin: 2em;
     z-index: 2;
+    margin-top: 5em;
 
 
     h2 {
@@ -289,7 +287,7 @@ section {
         transform: scale(1.2);
         opacity: .4;
         @media (min-width: $breakpoint-small) {
-            transform: scale(2);
+            transform: scale(1.6);
         }
     }
     img {
@@ -307,14 +305,26 @@ section {
 #section-5 {
     background-color: $color-background-light;
     margin: 2em;
-    border-radius: 20px;
     
     .row {
         @media (min-width: $breakpoint-small) {
         flex-wrap: nowrap;
         }
+         .one-third:nth-child(1) {
+            order: 2;
+        }
+
+        .one-third:nth-child(2) {
+            order: 1;
+        }
+
+        .one-third:nth-child(3) {
+            order: 3;
+        }
+
         flex-wrap: wrap;
         margin: 0;
+
         }
 
     .staff {
@@ -325,7 +335,7 @@ section {
     img.left {
         transform: translate(14.3em);
         @media (min-width: $breakpoint-small) {
-            transform: scale(2) translate(-5.5em, 0);
+            transform: scale(2);
         }
     
     }
@@ -334,7 +344,7 @@ section {
         transform: translate(-14.3em);
         // box-shadow: 3px 3px 10px rgba(0,0,0,.6);
         @media (min-width: $breakpoint-small) {
-            transform: scale(2) translate(5.5em, 0);
+            transform: scale(2);
         }
     }    
 
@@ -420,7 +430,7 @@ section {
         margin-bottom: -6em;
         z-index: 1;
         @media (min-width: $breakpoint-small) {
-            margin-top: -35em;
+            margin-top: -30em;
         }
         text-align: left;
     }
@@ -438,6 +448,14 @@ section {
         margin-left: -10em;
         transform: scale(2);
         }
+    }
+
+    #strawberrydrink {
+        @media (min-width: $breakpoint-small) {
+            
+            margin-left: -10em;
+        }
+        
     }
 }
 
@@ -464,7 +482,7 @@ section {
         width: auto;
         height: auto;
         z-index: -20;
-        opacity: 1;
+        opacity: .6;
         display: initial;
         }
         // background-image: url(/img/EP_hero_pic.jpg);
@@ -496,6 +514,7 @@ section {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 15% 85%;
+        opacity: .6;
         @media (min-width: $breakpoint-small) {
             display: none;
     }
