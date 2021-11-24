@@ -831,9 +831,16 @@ section {
             transform: scale(2);
   }
 }
+#section-6 #strawberrydrink {
+  margin-top: 3em;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 @media (min-width: 768px) {
   #section-6 #strawberrydrink {
     margin-left: -10em;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 

@@ -39,7 +39,7 @@ document.querySelectorAll('#section-4').forEach((div) => {
 const animation3 = lottie.loadAnimation({
     container: strawberrydrink, // the dom element that will contain the animation
     renderer: 'svg',
-    loop: false,
+    loop: true,
     autoplay: false,
     path: 'js/EP_strawberrydrink/data.json' // the path to the animation json
 });
