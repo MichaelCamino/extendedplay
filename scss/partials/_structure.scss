@@ -112,15 +112,38 @@ section {
     }
 
     img {
-        box-shadow: 5px 5px 15px rgba(0,0,0,.6);
+        box-shadow: 3px 3px 15px rgba(0,0,0,.6);
+        position: relative;
     }
 
-    video {
-        width: 100%;
-        height: auto;
-        // @media (min-width: $breakpoint-small) {
-        //     transform: scale(1.7) rotate(90deg)
-        // }
+    #topbranch {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+        position: absolute;
+        margin: auto;
+        margin-bottom: 4em;
+        transform: scale(1) rotatey(180deg);
+        z-index: 2;
+        top: -12%;
+        right: -20%;
+        display: block;
+        }
+    }
+
+    #bottombranch {
+        position: absolute;
+        transform: scale(2) rotatey(180deg);
+        left: -12%;
+        opacity: .3;
+        @media (min-width: $breakpoint-small) {
+            position: absolute;
+        margin: auto;
+        transform: scale(1) rotatey(180deg);
+        z-index: 2;
+        bottom: -10%;
+        left: -50%;
+        opacity: 1;
+        }
     }
 }
 
@@ -285,9 +308,9 @@ section {
         width: 100%;
         height: auto;
         transform: scale(1.2);
-        opacity: .3;
+        opacity: 1;
         @media (min-width: $breakpoint-small) {
-            transform: scale(2);
+            transform: scale(1.6);
         }
     }
     img {
@@ -375,6 +398,7 @@ section {
 }
 
 #section-6 {
+    overflow: hidden;
     margin: 2em;
     h2 {
         color: $color-accent-light;
@@ -430,7 +454,7 @@ section {
         margin-bottom: -6em;
         z-index: 1;
         @media (min-width: $breakpoint-small) {
-            margin-top: -30em;
+            margin-top: -3em;
         }
         text-align: left;
     }
@@ -438,7 +462,8 @@ section {
         margin-top: 1em;
         @media (min-width: $breakpoint-small) {
             margin-bottom: -10em;
-            text-align: left;
+            margin-right: -15em;
+            text-align: right;
         }
         text-align: right;
     }
@@ -450,13 +475,14 @@ section {
         }
     }
 
-    #strawberrydrink {
-        margin-top: 3em;
-        transform: scale(1.2);
-        opacity: .3;
+    #drinkfooter {
+        margin-top: 4em;
+        transform: scale(1.1) rotateY(180deg);
+        opacity: 1;
         @media (min-width: $breakpoint-small) {
-            margin-left: -10em;
-            transform: scale(1.5);
+            
+            width: 100%;
+            transform: scale(3);
         }
         
     }

@@ -474,12 +474,44 @@ section {
   max-width: 90%;
 }
 #section-1 img {
-  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.6);
+  position: relative;
 }
-#section-1 video {
-  width: 100%;
-  height: auto;
+#section-1 #topbranch {
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-1 #topbranch {
+    position: absolute;
+    margin: auto;
+    margin-bottom: 4em;
+    -webkit-transform: scale(1) rotatey(180deg);
+            transform: scale(1) rotatey(180deg);
+    z-index: 2;
+    top: -12%;
+    right: -20%;
+    display: block;
+  }
+}
+#section-1 #bottombranch {
+  position: absolute;
+  -webkit-transform: scale(2) rotatey(180deg);
+          transform: scale(2) rotatey(180deg);
+  left: -12%;
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  #section-1 #bottombranch {
+    position: absolute;
+    margin: auto;
+    -webkit-transform: scale(1) rotatey(180deg);
+            transform: scale(1) rotatey(180deg);
+    z-index: 2;
+    bottom: -10%;
+    left: -50%;
+    opacity: 1;
+  }
 }
 
 #section-2 {
@@ -647,12 +679,12 @@ section {
   height: auto;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  opacity: 0.3;
+  opacity: 1;
 }
 @media (min-width: 768px) {
   #section-4 #coffee {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
   }
 }
 #section-4 img {
@@ -747,6 +779,7 @@ section {
 }
 
 #section-6 {
+  overflow: hidden;
   margin: 2em;
 }
 #section-6 h2 {
@@ -807,7 +840,7 @@ section {
 }
 @media (min-width: 768px) {
   #section-6 .left {
-    margin-top: -30em;
+    margin-top: -3em;
   }
 }
 #section-6 .right {
@@ -817,7 +850,8 @@ section {
 @media (min-width: 768px) {
   #section-6 .right {
     margin-bottom: -10em;
-    text-align: left;
+    margin-right: -15em;
+    text-align: right;
   }
 }
 #section-6 img {
@@ -830,17 +864,17 @@ section {
             transform: scale(2);
   }
 }
-#section-6 #strawberrydrink {
-  margin-top: 3em;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  opacity: 0.3;
+#section-6 #drinkfooter {
+  margin-top: 4em;
+  -webkit-transform: scale(1.1) rotateY(180deg);
+          transform: scale(1.1) rotateY(180deg);
+  opacity: 1;
 }
 @media (min-width: 768px) {
-  #section-6 #strawberrydrink {
-    margin-left: -10em;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+  #section-6 #drinkfooter {
+    width: 100%;
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
 }
 
