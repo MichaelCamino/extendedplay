@@ -39,15 +39,16 @@ body {
     }
 }
 
-// #section-1, #section-3,
-// #section-5 {
+#section-1, #section-3,
+#section-5 {
 
-//     opacity: 0;
-//     transition: all .4s ease-in-out;
+    opacity: 0;
+    transition: all .4s ease-in-out;
 
-//     &[data-sectionstate="active"] {
-//         opacity: 1;
-//     }
+    &[data-sectionstate="active"] {
+        opacity: 1;
+    }
+}
 
 //     // ANIMATE FIRST COLUMN
 //     .one-half:nth-child(1) {
@@ -207,7 +208,7 @@ body {
 .animate-slide-right-section-5,
 [data-sectionstate="inactive"] .animate-slide-right-section-5 {
     transition: all .5s ease-in-out;
-    opacity: 1;
+    opacity: 0;
     transform: translate(0, 0);
 }
 
