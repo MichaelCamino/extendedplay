@@ -1265,17 +1265,6 @@ body {
           transform: translate(0, 0);
 }
 
-#section-1, #section-3,
-#section-5 {
-  opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-#section-1[data-sectionstate=active], #section-3[data-sectionstate=active],
-#section-5[data-sectionstate=active] {
-  opacity: 1;
-}
-
 .animate-opacity,
 [data-sectionstate=inactive] .animate-opacity {
   -webkit-transition: all 0.5s ease-in-out;
