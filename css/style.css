@@ -641,6 +641,12 @@ section {
   padding: 1em;
   overflow: hidden;
 }
+#section-2 .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
 #section-2 .menu {
   text-align: center;
   font-size: 0.8em;
@@ -660,7 +666,7 @@ section {
   #section-2 .vertical-line-section2::after {
     position: fixed;
     bottom: 0;
-    right: 0;
+    right: -50%;
     content: "";
     display: inline-block;
     height: 40em;

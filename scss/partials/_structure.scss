@@ -294,6 +294,12 @@ section {
     background-size: cover;
     padding: 1em;
     overflow: hidden;
+
+    
+    .row {
+        flex-direction: row-reverse;
+    }
+
     .menu {
         text-align: center;
         font-size: .8em;
@@ -311,7 +317,7 @@ section {
             @media (min-width: $breakpoint-small) {
             position: fixed;
             bottom: 0;
-            right: 0;
+            right: -50%;
             content: '';
             display: inline-block;
             height: 40em;
