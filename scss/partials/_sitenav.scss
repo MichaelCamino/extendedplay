@@ -59,7 +59,7 @@
         margin: auto;
         padding: 0;
         list-style: none;
-        background-image: url(/img/navbackground.png);
+        background-image: url(../img/navbackground.png);
         background-size: cover;
         background-repeat: no-repeat;
         position: fixed;
@@ -72,7 +72,7 @@
         justify-content: center;
         align-items: center;
         clip-path: circle(0px at 100% 0px);
-        transition: .5s all ease-out;
+        transition: .7s all ease-in-out;
         font-family: $font-family-sans;
         font-weight: 300;
         z-index: 10;
