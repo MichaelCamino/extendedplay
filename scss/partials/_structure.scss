@@ -197,6 +197,8 @@ section {
 
     .line-p-1 {
         &::before {
+            display: none;
+            @media (min-width: $breakpoint-small) {
             content: '';
             display: inline-block;
             border-radius: 25px;
@@ -207,8 +209,11 @@ section {
             margin-left: 20px;
         }
     }
+    }
     .line-p-2 {
         &::before {
+            display: none;
+            @media (min-width: $breakpoint-small) {
             content: '';
             display: inline-block;
             border-radius: 25px;
@@ -219,8 +224,11 @@ section {
             margin-left: 1px;
         }
     }
+    }
     .line-p-3 {
         &::before {
+            display: none;
+            @media (min-width: $breakpoint-small) {
             content: '';
             display: inline-block;
             border-radius: 25px;
@@ -229,6 +237,7 @@ section {
             background-color: $color-text-body;
             margin-bottom: -42em;
             margin-left: -19px;
+            }
         }
     }
 
