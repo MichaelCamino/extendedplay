@@ -52,7 +52,7 @@
 
 .playlist {
     &:after {
-        transform: translateX(-120%) translateY(-5%) rotate(45deg);
+        transform: translateX(-115%) translateY(-5%) rotate(45deg);
     }
     &:hover::after {
         transform: translateX(-30%) translateY(-25%) rotate(45deg);
