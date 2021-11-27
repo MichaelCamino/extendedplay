@@ -120,7 +120,7 @@ section {
                 content: '';
                 display: block;
                 height: 2px;
-                width: 4em;
+                width: 5em;
                 background-color: $color-accent-light;
                 border-radius: 25px;
             }
@@ -570,11 +570,11 @@ section {
 
     p {
         @media (min-width: $breakpoint-small) {
-            max-width: 65%;
+            max-width: 70%;
             margin-left: 4em;
         }
         margin-left: 11em;
-        font-family: $font-family-sans;
+        font-family: $font-family-serif;
         line-height: 1.3;
         max-width: 80%;
         margin-top: 10px;
@@ -601,7 +601,7 @@ section {
         @media (min-width: $breakpoint-small) {
         width: 100%;
         height: auto;
-        transform: scale(2) translateX(50px);
+        transform: scale(2) translateX(30px);
         transform-origin: left center;
         }
         width: 100%;
