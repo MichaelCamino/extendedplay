@@ -635,7 +635,7 @@ section {
 }
 
 #section-2 {
-  background-image: url(/img/EP_darksection_background.png);
+  background-image: url(../img/EP_darksection_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1em;
@@ -959,7 +959,7 @@ section {
 }
 
 #section-4 {
-  background-image: url(/img/EP_darksection_background.png);
+  background-image: url(../img/EP_darksection_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
@@ -1091,7 +1091,7 @@ section {
 }
 
 #section-6 {
-  background-image: url(/img/EP_darksection_background.png);
+  background-image: url(../img/EP_darksection_background.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 6em;
