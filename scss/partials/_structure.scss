@@ -64,24 +64,22 @@ section {
     padding: 1em 0;
     display: grid;
     align-items: center;
-
-    @media (min-width: $breakpoint-small) {
-        min-height: 100vh;
-    }
+    min-height: 100vh;
 
 }
 
 #section-1 {
     @media (min-width: $breakpoint-small) {
-        // margin: 2em 2em 0 2em;
         position: relative;
-    }
         background-image: url(../img/EP_background_section1.png);
+    }
+        background-image: url(../img/EP_background_section1_mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 40%;
+        background-position: 50%;
     z-index: 2;
     overflow: hidden;
+    height: 100vh;
     .row {
         margin: 0;
     }
@@ -91,31 +89,15 @@ section {
     
 
     h2.headline1 {
-            font-family: $font-family-sans;
-            font-size: 4em;
-            font-weight: 300;
-            color: $color-text-body;
-            font-size: 3.3em;
-            margin: auto;
-            margin-left: 19px;
-            margin-bottom: -15px;
-        &::after {
-            content: '';
-            display: inline-block;
-            height: 8.5em;
-            width: 5px;
-            background-color: $color-text-body;
-            margin-left: 30px;
-            margin-bottom: 0;
-            margin-top: -10em;
-        }
+            display: none;
         @media (min-width: $breakpoint-small) {
-            font-size: 4em;
-            font-weight: 300;
+            font-family: $font-family-sans;
+            font-size: 5em;
+            font-weight: 400;
             color: $color-text-body;
-            font-size: 4em;
             margin: auto;
             line-height: 1.2;
+            display: block;
             &::before {
                 content: '';
                 display: block;
@@ -124,51 +106,118 @@ section {
                 background-color: $color-accent-light;
                 border-radius: 25px;
             }
-    
-            &::after {
-                content: '';
-                display: inline-block;
-                height: 8.5em;
-                width: 5px;
-                background-color: $color-accent-light;
-                margin-left: 60px;
-                margin-bottom: 10px;
-                margin-top: -10em;
-                border-radius: 25px;
-            }
         }
-        
-       
-
     }
+
     h2.headline2 {
-        font-family: $font-family-sans;
-        color: $color-accent-light;
-        font-size: 4em;
-        margin: auto;
-        margin-left: 2.2em;
-        font-weight: 400;
-        @media (min-width: $breakpoint-small) {
+        display: none;
+            @media (min-width: $breakpoint-small) {
+            font-family: $font-family-sans;
+            font-weight: 200;
             font-size: 8em;
-            margin-top: -43px;
-        color: $color-accent-light;
-        font-size: 6em;
-        margin: auto;
-        margin-left: 1.5em;
-        margin-top: -33px;
-         &::after {
-            content: '';
+            color: $color-accent-light;
+            font-size: 6em;
+            margin: auto;
+            margin-left: 1.5em;
+            margin-top: -33px;
             display: block;
-            height: 2px;
-            width: 2.45em;
-            margin-top: -6px;
-            border-radius: 25px;
-            background-color: $color-background-dark;
+                &::after {
+                     content: '';
+                    display: block;
+                    height: 2px;
+                    width: 2.45em;
+                    margin-top: -6px;
+                    border-radius: 25px;
+                    background-color: $color-background-dark;
+                    }
             }
         }
-        
-    
-}
+
+    h2.headline1-mobile {
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+            font-family: $font-family-serif;
+            font-weight: 900;
+            font-style: italic;
+            color: $color-text-body;
+            font-size: 13em;
+            line-height: 1vh;
+            margin: auto;
+            margin-top: 1em;
+            text-align: center;
+            display: block;
+    }
+
+    h2.headline2-mobile {
+        font-family: $font-family-serif;
+        color: $color-accent-light;
+        font-size: 6.5em;
+        line-height: 0;
+        margin: auto;
+        margin-top: .8em;
+        text-align: center;
+        font-weight: 400;
+        display: block;
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+    }
+
+    h2.headline3-mobile {
+        font-family: $font-family-serif;
+        font-size: 14.5em;
+        line-height: 28.5vh;
+        font-weight: 800;
+        font-style: italic;
+        margin: auto;
+        color: $color-text-body;
+        text-align: center;
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+    }
+
+    h2.headline4-mobile {
+        font-family: $font-family-serif;
+        font-size: 6em;
+        font-weight: 400;
+        line-height: 8.5vh;
+        color: $color-accent-light;
+        text-align: center;
+        margin: auto;
+        margin-top: -.7em;
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+    }
+
+    h2.headline5-mobile {
+        font-family: $font-family-serif;
+        font-weight: 300;
+        font-size: 7.5em;
+        line-height: 10vh;
+        color: $color-text-body;
+        text-align: center;
+        margin: auto;
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+    }
+
+    h2.headline6-mobile {
+        font-family: $font-family-serif;
+        font-weight: 900;
+        font-size: 9em;
+        font-style: italic;
+        line-height: 15vh;
+        color: $color-accent-light;
+        text-align: center;
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+    }
+
     h3 {
         @media (min-width: $breakpoint-small) {
             font-size: 2;
@@ -180,12 +229,16 @@ section {
         margin-top: 5px;
     }
     p {
-        font-family: $font-family-serif;
+        display: none;
+        @media (min-width: $breakpoint-small) {
+        font-family: $font-family-ingredients;
         font-weight: 400;
         line-height: 1.3;
+        font-size: 1.1em;
         margin-top: 10px;
         margin-left: 4em;
         max-width: 70%;
+        }
     }
 
     .big-a {
@@ -253,35 +306,35 @@ section {
     }
     .vinylpic {
         position: absolute;
-        top: 13%;
+        top: 8%;
         left: 22%;
         max-width: 23%;
     }
 
     .barpic {
         position: absolute;
-        top: 30%;
+        top: 25%;
         left: 3%;
         max-width: 30%;
     }
 
     .stoolspic {
         position: absolute;
-        top: 100%;
+        top: 73%;
         left: 30.75%;
         max-width: 15%;
     }
 
     .turntablepic {
         position: absolute;
-        bottom: 64%;
+        bottom: 61%;
         left: 25%;
         max-width: 20%;
     }
 
     .drinksplashpic {
         position: absolute;
-        top: 38%;
+        top: 33%;
         left: 5%;
         max-width: 23%;
         z-index: 1;
@@ -427,6 +480,7 @@ section {
 
 #section-3 {
     background-color: $color-background-light;
+    background-size: 10em;
     z-index: 2;
     overflow: hidden;
 
@@ -434,47 +488,31 @@ section {
         margin: 0;
     }
 
-    a { 
-        @media (min-width: $breakpoint-small) {
-            margin: auto;
-            margin-left: 5em;
-            margin-top: 1em;
+    a {
+        text-decoration: none;
+        color: $color-accent-light;
+        transition: .4s ease;
+        &:hover {
+            color: hotpink;
         }
-        font-family: $font-family-drinknames;
-        transition: 250ms ease;
-        font-size: 12px;
-        margin: auto;
-        margin-left: 2.2em;
-        margin-top: -7em;
-        padding-top: 1.3em;
-        margin-bottom: 5em;
     }
+    
 
     // SECTION 3 DESKTOP WITH PARALLAX
     h2.section-3-type-1 {
         display: none;
         @media (min-width: $breakpoint-small) {
-        color: $color-accent-light;
-        font-size: 9em;
-        font-style: italic;
-        text-align: left;
-        line-height: .495;
-        margin: auto;
-        margin-bottom: -.56em;
-        display: block;
-        }
-        &::after {
-            display: none;
-            @media (min-width: $breakpoint-small) {
-                content: '';
-                display: inline-block;
-                height: 3em;
-                width: 5px;
-                background-color: $color-background-dark;
-                margin-left: 2.4em;
-                margin-top: -6em 
+            font-family: $font-family-serif;
+            font-weight: 900;
+            color: $color-accent-light;
+            font-size: 12em;
+            font-style: italic;
+            text-align: left;
+            line-height: .4;
+            margin: auto;
+            display: block;
             }
-        }
+        
     }
     h3.section-3-type-2 {
         display: none;
@@ -482,9 +520,9 @@ section {
         color: $color-accent-dark;
         font-family: $font-family-sans;
         font-weight: 300;
-        font-size: 3.5em;
+        font-size: 5em;
         text-align: center;
-        line-height: 1.35;
+        line-height: 1.15;
         margin: auto;
         display: block;
         }
@@ -499,6 +537,7 @@ section {
         font-size: 4.5em;
         text-align: right;
         line-height: .3;
+        padding-right: .5em;
         margin: auto;
         display: block;
         }
@@ -513,6 +552,7 @@ section {
         text-align: left;
         font-size: 5.2em;
         line-height: 1.15;
+        padding-left: .5em;
         margin: auto;
         display: block;
         }
@@ -521,14 +561,13 @@ section {
     // SECTION 3 MOBILE NO PARALLAX
 
     .section-3-type-1-mobile {
-        margin-bottom: 0;
         color: $color-accent-light;
         font-size: 9em;
         font-style: italic;
-        text-align: left;
-        text-align: right;
+        text-align: center;
         margin: auto;
-        line-height: .58;
+        margin-top: .5em;
+        line-height: .37;
         @media (min-width: $breakpoint-small) {
             display: none;
         }
@@ -540,9 +579,9 @@ section {
         font-weight: 400;
         color: $color-accent-dark;
         line-height: 1.3;
-        margin-left: -7em;
+        text-align: center;
         margin: auto;
-        font-size: 3.3em;
+        font-size: 4em;
         @media (min-width: $breakpoint-small) {
             display: none;
         }
@@ -553,7 +592,7 @@ section {
         font-family: $font-family-sans;
         font-weight: 400;
         font-size: 7em;
-        text-align: right;
+        text-align: center;
         line-height: .5;
         margin-bottom: 8em;
         margin: auto;
@@ -565,10 +604,10 @@ section {
 
     .section-3-type-3-list-mobile {
         display: block;
-        color: $color-text-body;
+        color: $color-accent-light;
         font-family: $font-family-sans;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
         font-size: 5.9em;
         line-height: 1.05;
         margin: auto;
@@ -585,15 +624,18 @@ section {
 
     p {
         @media (min-width: $breakpoint-small) {
+            font-size: 1.1em;
             max-width: 70%;
-            margin-left: 4em;
+            margin: auto;
+            text-align: center;
         }
-        margin-left: 11em;
         font-family: $font-family-serif;
-        line-height: 1.3;
-        max-width: 80%;
-        margin-top: 10px;
-        text-align: left;
+        font-size: 1.3em;
+        font-weight: 700;
+        line-height: 1.2;
+        max-width: 60%;
+        text-align: center;
+        margin: auto;
     }
 
     .big-l {
@@ -614,13 +656,19 @@ section {
 
     video {
         @media (min-width: $breakpoint-small) {
+            
         width: 100%;
         height: auto;
-        transform: scale(2) translateX(30px);
-        transform-origin: left center;
+        margin-right: 4em;
+        margin: auto;
+        transform: scale(1.2);
+        transform-origin: right center;
         }
+        border-radius: 50%;
         width: 100%;
         height: auto;
+        margin: auto;
+        margin-top: 2em;
     }
     
 }
@@ -898,6 +946,7 @@ section {
         background-size: cover;
         background-position: 15% 85%;
         opacity: .6;
+        position: fixed;
         @media (min-width: $breakpoint-small) {
             display: none;
     }
