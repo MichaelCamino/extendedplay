@@ -100,3 +100,34 @@ document.querySelectorAll('#section-6').forEach((div) => {
     myobserver_drinkfooter.observe(div)
 });
 
+// DRINK FOOTER
+
+const animation5 = lottie.loadAnimation({
+    container: welcome, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'js/EP_welcome_animation/data.json' // the path to the animation json
+});
+
+const io_options_welcome = {
+    // root: document.body,
+    rootMargin: '-25% 0px -25% 0px',
+    threshold: 0
+};
+
+const myobserver_welcome = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animation5.play();
+
+        } else {
+            animation5.stop();
+
+        }
+    });
+}, io_options_welcome);
+document.querySelectorAll('#section-1').forEach((div) => {
+    myobserver_welcome.observe(div)
+});
+
