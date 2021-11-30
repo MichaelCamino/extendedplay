@@ -87,18 +87,15 @@ section {
 
     #welcome {
         @media (min-width: $breakpoint-small) {
-        transform: translateX(-10em);
-        top: 15%;
-        left: 75%;
+        max-width: 80%;
         margin: auto;
-        position: absolute;
+        margin-left: 10em;
         }
     }
     
 
 
     img {
-        display: none;
         @media (min-width: $breakpoint-small) {
             margin: auto;
             display: block;
@@ -107,40 +104,71 @@ section {
         }
         
     }
+
+    .section1_welcome {
+        max-width: 100%;
+        margin-left: auto;
+        padding: 2em;
+        @media (min-width: $breakpoint-small) {
+        max-width: 80%;
+        margin-left: 7em;
+        display: block;
+        }
+    }
     .vinylpic {
+        @media (min-width: $breakpoint-small) {
         position: absolute;
         top: 8%;
         left: 22%;
         max-width: 23%;
+        display: block;
+        }
+        display: none;
     }
 
     .barpic {
+        @media (min-width: $breakpoint-small) {
         position: absolute;
         top: 25%;
         left: 3%;
         max-width: 30%;
+        display: block;
+        }
+        display: none;
     }
 
     .stoolspic {
+        @media (min-width: $breakpoint-small) {
         position: absolute;
         top: 73%;
         left: 30.75%;
         max-width: 15%;
+        display: block;
+        }
+        display: none;
     }
 
     .turntablepic {
+        @media (min-width: $breakpoint-small) {
         position: absolute;
         bottom: 61%;
         left: 25%;
         max-width: 20%;
+        display: block;
+        }
+        display: none;
     }
 
     .drinksplashpic {
+        @media (min-width: $breakpoint-small) {
         position: absolute;
         top: 33%;
         left: 5%;
         max-width: 23%;
         z-index: 1;
+        display: block;
+        }
+        display: none;
     }
 }
 

@@ -445,16 +445,10 @@ section {
 }
 @media (min-width: 768px) {
   #section-1 #welcome {
-    -webkit-transform: translateX(-10em);
-            transform: translateX(-10em);
-    top: 15%;
-    left: 75%;
+    max-width: 80%;
     margin: auto;
-    position: absolute;
+    margin-left: 10em;
   }
-}
-#section-1 img {
-  display: none;
 }
 @media (min-width: 768px) {
   #section-1 img {
@@ -464,36 +458,78 @@ section {
     height: auto;
   }
 }
+#section-1 .section1_welcome {
+  max-width: 100%;
+  margin-left: auto;
+  padding: 2em;
+}
+@media (min-width: 768px) {
+  #section-1 .section1_welcome {
+    max-width: 80%;
+    margin-left: 7em;
+    display: block;
+  }
+}
 #section-1 .vinylpic {
-  position: absolute;
-  top: 8%;
-  left: 22%;
-  max-width: 23%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-1 .vinylpic {
+    position: absolute;
+    top: 8%;
+    left: 22%;
+    max-width: 23%;
+    display: block;
+  }
 }
 #section-1 .barpic {
-  position: absolute;
-  top: 25%;
-  left: 3%;
-  max-width: 30%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-1 .barpic {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    max-width: 30%;
+    display: block;
+  }
 }
 #section-1 .stoolspic {
-  position: absolute;
-  top: 73%;
-  left: 30.75%;
-  max-width: 15%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-1 .stoolspic {
+    position: absolute;
+    top: 73%;
+    left: 30.75%;
+    max-width: 15%;
+    display: block;
+  }
 }
 #section-1 .turntablepic {
-  position: absolute;
-  bottom: 61%;
-  left: 25%;
-  max-width: 20%;
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-1 .turntablepic {
+    position: absolute;
+    bottom: 61%;
+    left: 25%;
+    max-width: 20%;
+    display: block;
+  }
 }
 #section-1 .drinksplashpic {
-  position: absolute;
-  top: 33%;
-  left: 5%;
-  max-width: 23%;
-  z-index: 1;
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-1 .drinksplashpic {
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    max-width: 23%;
+    z-index: 1;
+    display: block;
+  }
 }
 
 #section-2 {
@@ -574,7 +610,7 @@ section {
   margin: auto;
 }
 #section-2 h3 {
-  color: darkgrey;
+  color: #9c9c9c;
   font-size: 1.5em;
   font-weight: 400;
   font-style: italic;
@@ -651,7 +687,7 @@ section {
 }
 @media (min-width: 768px) {
   #section-3 h3.section-3-type-2 {
-    color: darkgrey;
+    color: #9c9c9c;
     font-family: montserrat, helvetica, arial;
     font-weight: 300;
     font-size: 5em;
@@ -711,7 +747,7 @@ section {
   display: block;
   font-family: montserrat, helvetica, arial;
   font-weight: 400;
-  color: darkgrey;
+  color: #9c9c9c;
   line-height: 1.3;
   text-align: center;
   margin: auto;
@@ -826,7 +862,7 @@ section {
   margin: auto;
 }
 #section-4 h3 {
-  color: darkgrey;
+  color: #9c9c9c;
   font-size: 2em;
   font-weight: 400;
   font-style: italic;
@@ -959,7 +995,7 @@ section {
   margin: auto;
 }
 #section-6 h3 {
-  color: darkgrey;
+  color: #9c9c9c;
   font-size: 2em;
   font-weight: 400;
   font-style: italic;
@@ -968,7 +1004,7 @@ section {
 }
 #section-6 h3 a {
   text-decoration: none;
-  color: darkgrey;
+  color: #9c9c9c;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
