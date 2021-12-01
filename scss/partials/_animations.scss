@@ -94,12 +94,12 @@ body {
 [data-sectionstate="inactive"] .animate-slide-left {
     transition: all .5s ease-in-out;
     opacity: 0;
-    transform: translate(0, 0);
+    transform: translate(100px, 0);
 }
 
 [data-sectionstate="active"] .animate-slide-left {
     opacity: 1;
-    transform: translate(-200px, 0);
+    transform: translate(0, 0);
 }
 
 .animate-slide-left-section-2,
