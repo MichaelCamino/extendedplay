@@ -71,7 +71,7 @@ section {
 #section-1 {
     @media (min-width: $breakpoint-small) {
         background-image: url(../img/EP_background_section1.png);
-        height: 50vh;
+        
     }
         background-image: url(../img/EP_background_section1_mobile.png);
         background-repeat: no-repeat;
@@ -79,7 +79,6 @@ section {
         background-position: 50%;
         z-index: 2;
         overflow: hidden;
-        height: 100vh;
         margin: auto;
 
     .line {
@@ -372,8 +371,6 @@ section {
     background-image: url(../img/EP_darksection_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 6em;
-    padding-bottom: 8em;
     
     h3 {
         color: $color-accent-dark;
@@ -421,11 +418,10 @@ section {
         color: $color-background-light;
     }
     .left {
-        margin-bottom: -6em;
+        
         z-index: 1;
         text-align: left;
         @media (min-width: $breakpoint-small) {
-            margin-top: -3em;
         }
     }
     .right {
@@ -452,6 +448,33 @@ section {
     }
 }
 
+#section-7 {
+    background-image: url(../img/EP_darksection_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+.right {
+    text-align: right;
+
+    h3 {
+        font-family: $font-family-sans;
+        color: $color-accent-dark;
+        font-size: 1.8em;
+        font-style: italic;
+        font-weight: 100;
+        line-height: 2vh;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+}
+
+
+
 /* HERO SECTION */
 
 
@@ -459,17 +482,17 @@ section {
 .hero {
     position: relative;
     display: grid;
-    place-items: right bottom;
-    // padding: 2em;
+    place-items: center;
+    padding: 0;
     color: white;
     overflow: hidden;
+    min-height: 100vh;
 
     video {
-        display: none;
         @media (min-width: $breakpoint-small) {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: 50;
+        left: 0;
         min-width: 100%;
         min-height: 100%;
         width: auto;
@@ -481,15 +504,17 @@ section {
         // background-image: url(/img/EP_hero_pic.jpg);
         // background-repeat: no-repeat;
         // background-size: cover;
+        display: none;
         
     }
 
-    .herologo {
+    #welcome {
         width: 100%;
-        height: 100vh;
+        height: auto;
         z-index: 2;
+        max-width: 90%;
         @media (min-width: $breakpoint-small) {
-            height: auto;
+            max-width: 48%;
         }
     }
 
@@ -503,14 +528,10 @@ section {
         right: 0;
         bottom: 0;
         z-index: -1;
-        background-image: url(../img/EP_hero_pic.jpg);
+        background-image: url(../img/EP_darksection_background.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 15% 85%;
         opacity: .6;
-        position: fixed;
-        @media (min-width: $breakpoint-small) {
-            display: none;
-    }
 }
 }

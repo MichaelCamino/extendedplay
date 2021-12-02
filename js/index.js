@@ -6,6 +6,16 @@ const animation1 = lottie.loadAnimation({
     path: 'js/EP_logo/data.json' // the path to the animation json
 });
 
+// WELCOME ANIMATION
+
+const animation5 = lottie.loadAnimation({
+    container: welcome, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/EP_welcome_animation/data.json' // the path to the animation json
+});
+
 
 // WREATH ANIMATION
 
@@ -100,15 +110,7 @@ document.querySelectorAll('#section-6').forEach((div) => {
     myobserver_drinkfooter.observe(div)
 });
 
-// WELCOME ANIMATION
 
-const animation5 = lottie.loadAnimation({
-    container: welcome, // the dom element that will contain the animation
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'js/EP_welcome_animation/data.json' // the path to the animation json
-});
 
 // PLAYLIST ANIMATION
 

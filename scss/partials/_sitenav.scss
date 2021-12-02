@@ -45,9 +45,9 @@
         
 
         svg {
-            fill: rgba(253, 240, 185, 1);
+            fill: $color-accent-light;
             &:hover {
-                fill: $color-accent-light;
+                fill: rgba(253, 240, 185, 1);
             }
             rect {
                 transition: 250ms ease-out;
@@ -71,7 +71,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        clip-path: circle(0px at 100% 0px);
+        clip-path: circle(0px at calc(100% - 2em) 2em);
         transition: .7s all ease-in-out;
         font-family: $font-family-sans;
         font-weight: 300;
