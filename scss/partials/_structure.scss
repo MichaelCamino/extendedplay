@@ -70,24 +70,22 @@ section {
 
 #section-1 {
     @media (min-width: $breakpoint-small) {
-        position: relative;
         background-image: url(../img/EP_background_section1.png);
+        height: 50vh;
     }
         background-image: url(../img/EP_background_section1_mobile.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50%;
-    z-index: 2;
-    overflow: hidden;
-    height: 100vh;
-    .row {
+        z-index: 2;
+        overflow: hidden;
+        height: 100vh;
         margin: auto;
-    }
 
-
-    .welcome {
+    .line {
         @media (min-width: $breakpoint-small) {
-        margin-top: -5em;
+        margin: auto;
+        margin-top: -4em;
         }
     }
     
@@ -95,6 +93,7 @@ section {
         display: none;
         @media (min-width: $breakpoint-small) {
             display: block;
+            margin: auto;
         }
     }
 
@@ -118,6 +117,8 @@ section {
     background-size: cover;
     padding: 1em;
     overflow: hidden;
+    margin: auto;
+    padding-top: 2em;
 
     
     .row {
@@ -128,7 +129,6 @@ section {
         text-align: center;
         font-size: .8em;
         width: 100%;
-        margin-right: 2em;
         margin: auto;
         @media (min-width: $breakpoint-small) {
         width: auto;
@@ -191,7 +191,6 @@ section {
     
     p {
         @media (min-width: $breakpoint-small) {
-            max-width: 70%;
             margin: auto;
             text-align: center;
         }
@@ -206,7 +205,7 @@ section {
     }
 
     .big-l {
-        font-size: 2em;
+        font-size: 1.8em;
         line-height: .9;
         margin-left: -3px;
     }
@@ -258,6 +257,12 @@ section {
         font-weight: 400;
 }
 
+.big-i {
+    font-size: 1.8em;
+    line-height: .9;
+    margin-left: -3px;
+}
+
     a {
         text-decoration: none;
         color: $color-accent-light;
@@ -265,13 +270,6 @@ section {
         &:hover {
             color: hotpink;
         }
-    
-
-    .big-i {
-        font-size: 2em;
-        line-height: .9;
-        margin-left: -3px;
-    }
 
     }
     .button {
