@@ -785,27 +785,24 @@ section {
 #section-6 .right {
   margin-top: 1em;
   text-align: right;
-}
-@media (min-width: 768px) {
-  #section-6 .right {
-    margin-bottom: -10em;
-    margin-right: -15em;
-  }
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 #section-6 .right img {
-  max-width: 65%;
+  max-width: 100%;
 }
 #section-6 #drinkfooter {
-  margin-top: 4em;
-  -webkit-transform: scale(1.1) rotateY(180deg);
-          transform: scale(1.1) rotateY(180deg);
   opacity: 1;
+  margin: auto;
+  margin-top: 4em;
+  -webkit-transform: rotateY(180deg) rotate(-15deg) scale(1.3);
+          transform: rotateY(180deg) rotate(-15deg) scale(1.3);
 }
 @media (min-width: 768px) {
   #section-6 #drinkfooter {
-    width: 100%;
-    -webkit-transform: scale(2.2);
-            transform: scale(2.2);
+    margin: auto;
   }
 }
 
