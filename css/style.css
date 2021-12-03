@@ -937,11 +937,13 @@ section {
   opacity: 1;
   margin: auto;
   margin-top: 4em;
+  display: none;
   -webkit-transform: rotateY(180deg) rotate(-15deg) scale(1.3);
           transform: rotateY(180deg) rotate(-15deg) scale(1.3);
 }
 @media (min-width: 768px) {
   #section-6 #drinkfooter {
+    display: block;
     margin: auto;
   }
 }
@@ -1263,8 +1265,8 @@ body {
 
 .animate-clip-path,
 [data-sectionstate=inactive] .animate-clip-path {
-  -webkit-transition: all 1.2s ease-in-out;
-  transition: all 1.2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
   opacity: 0;
   -webkit-clip-path: circle(0px at -10% 80%);
           clip-path: circle(0px at -10% 80%);
