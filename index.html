@@ -8,8 +8,12 @@
     <title>EP</title>
 
     <!-- ADOBE FONTS -->
-
     <link rel="stylesheet" href="https://use.typekit.net/sfs0dqn.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <!-- MAIN CSS STYLES -->
     <link rel="stylesheet" href="css/style.css">
@@ -53,25 +57,32 @@
 
     <main class="site-main">
         <section class="hero animate-on-scroll">
-            <!-- <video playsinline autoplay muted loop data-parallax-speed="2">
+            <video playsinline autoplay muted loop data-parallax-speed="2">
                 <source src="img/EP_hero_video.mp4">
-            </video> -->
-            <div id="welcome" class="welcome" width="500" height="500" data-parallax-speed="1">
-            </div>
+            </video>
 
+            <div id="welcome" class="parallax-element" data-parallax-speed="1">
             </div>
             <div class="bg-image"></div>
         </section>
         <section id="section-1" class="animate-on-scroll">
             <div class="container">
                 <div class="row">
-                    <div class="one-half line">
-                        <div class="animate-scale-in welcome">
-                            <div id="herologo" class="herologo"></div>
-                        </div>
+                    <div class="one-half left">
+                        <img src="img/section_1_type.png" class="waydown animate-slide-right"
+                            alt="Way down in chinatown">
+                        <p class="animate-slide-up"><span>W</span>e're a small boutique bar on the edge of chinatown,
+                            owned and operated by
+                            people who love music....
+                            and whiskey!</p>
                     </div>
                     <div class="one-half animate-slide-left">
                         <img src="img/section1_goldbarpic_round.png" alt="Round Bar Picture" class="goldbarpic">
+                    </div>
+                    <div class="left-wheat animate-slide-up">
+                        <img src="img/wheat_left.png" alt="left wheat">
+                    </div>
+                    <div class="right-wheat animate-slide-down"><img src="img/wheat_right.png" alt="Right Wheat">
                     </div>
                 </div>
             </div>
@@ -82,23 +93,24 @@
 
                     <div class="one-half">
                         <div id="wreath"></div>
+
                     </div>
 
-                    <div class="one-half menu animate-scale-in">
-                        <p class="drink-name">CHINATOWN GOLD</p>
+                    <div class="one-half menu animate-slide-right">
+                        <p class="drink-name">Chinatown Gold</p>
                         <p class="drink-ingredients">Four Roses Bourbon, Fresh Lemon Juice</p>
                         <p class="drink-ingredients">Honey Syrup</p>
-                        <p class="drink-name">SO FRESH AND SO CLEAN</p>
+                        <p class="drink-name">So Fresh & So Clean</p>
                         <p class="drink-ingredients">Cazadores Reposado, Nectarine</p>
                         <p class="drink-ingredients">Cherries, Agave</p>
-                        <p class="drink-name">ALA WAI DREDGE</p>
+                        <p class="drink-name">Ala Wai Dredge</p>
                         <p class="drink-ingredients">Devil Springs Vodka, Olive Brine</p>
                         <p class="drink-ingredients">Basil, Rosemary, Thyme</p>
-                        <p class="drink-name">FORT STREET FIZZ</p>
+                        <p class="drink-name">Fort Street Fizz</p>
                         <p class="drink-ingredients">Uncle Val's Botanical Gin, Lemon and Lime Juice</p>
                         <p class="drink-ingredients">Heavy Cream, Orange Flower Water</p>
                         <p class="drink-ingredients">Egg White, Sparkling Water</p>
-                        <p class="drink-name">BLOOD & SAND</p>
+                        <p class="drink-name">Blood & Sand</p>
                         <p class="drink-ingredients">Yamazaki 12 Year Whiskey, Cherry Liquor</p>
                         <p class="drink-ingredients">Sweet Vermouth, Blood Orange Juice</p>
                         <div><a href="https://drive.google.com/file/d/1_qKAJBGus2uWl5gKkl2xYO6aC7eb3yXu/view?usp=sharing"
@@ -119,6 +131,12 @@
                         </video>
                     </div>
                     <div class="one-half">
+                        <div class="left-wheat animate-slide-up">
+                            <img src="img/wheat_left.png" alt="left wheat">
+                        </div>
+                        <div class="right-wheat animate-slide-down">
+                            <img src="img/wheat_right.png" alt="left wheat">
+                        </div>
                         <div class="animate-slide-left">
                             <h1></h1>
                             <img src="img/section_3_pic.png" alt="Our Weekly Playlist">
@@ -143,7 +161,10 @@
                 <div class="row swapped">
 
                     <div class="one-half">
-                        <div id="coffee"></div>
+                        <!-- <div id="coffee"></div> -->
+                        <div class="animate-clip-path">
+                            <img src="img/coffee.png" alt="Coffee Pic">
+                        </div>
                     </div>
                     <div class="one-half">
                         <div class="animate-slide-right">
@@ -167,6 +188,12 @@
             <div class="container">
                 <div class="row">
                     <div class="one-third staff">
+                        <div class="left-wheat animate-slide-up">
+                            <img src="img/wheat_left.png" alt="left wheat">
+                        </div>
+                        <div class="right-wheat animate-slide-down">
+                            <img src="img/wheat_right.png" alt="left wheat">
+                        </div>
                         <div class="animate-scale-in">
                             <img src="img/section_5_pic.png" alt="The Staff" class="players">
                         </div>
@@ -214,7 +241,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="one-half">
+                    <div class="one-half animate-clip-path">
                         <div id="drinkfooter"></div>
                     </div>
                 </div>

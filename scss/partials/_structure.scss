@@ -69,43 +69,85 @@ section {
 }
 
 #section-1 {
-    @media (min-width: $breakpoint-small) {
-        background-image: url(../img/EP_background_section1.png);
-        
-    }
-        background-image: url(../img/EP_background_section1_mobile.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50%;
+        background-color: $color-background-light;
         z-index: 2;
-        overflow: hidden;
+        // overflow: hidden;
         margin: auto;
+        position: relative;
 
-    .line {
+    .waydown {
+        margin-bottom: -1.5em;
+    }
+
+
+    p { 
         @media (min-width: $breakpoint-small) {
+            margin: auto;
+            margin-bottom: -2em;
+        }
+        font-family: $font-family-serif;
+        font-size: 1.3em;
+        font-weight: 600;
+        line-height: 1.2;
+        max-width: 65%;
+        text-align: center;
         margin: auto;
-        margin-top: -4em;
+        margin-bottom: 1em;
+        span {
+            font-size: 1.8em;
+            line-height: .9;
+            margin-right: -3px;
         }
     }
-    
-    .goldbarpic {
+
+    .left-wheat {
+        position: absolute;
+        z-index: 2;
+        max-width: 55%;
+        height: auto;
+        left: -20em;
+        bottom: -4em;
+        transition-delay: .2s;
+        @media (min-width: 1560px) {
+            bottom: -6em;
+        }
+        @media (min-width: 1672px) {
+            bottom: -7em;
+        }
+        @media (min-width: 1860px) {
+            bottom: -8em;
+            max-width: 55%;
+        }
+    }
+
+    .right-wheat {
+        position: absolute;
+        z-index: 2;
+        max-width: 70%;
+        height: auto;
         display: none;
         @media (min-width: $breakpoint-small) {
+            right: -15em;
+            bottom: -10em;
             display: block;
-            margin: auto;
+        }
+        @media (min-width: 1560px) {
+            bottom: -12em;
+        }
+        @media (min-width: 1672px) {
+            bottom: -15em;
+        }
+        @media (min-width: 1860px) {
+            bottom: -15em;
         }
     }
 
+    
 
-    img {
-        @media (min-width: $breakpoint-small) {
-            margin: auto;
-            display: block;
-            width: 100%;
-            height: auto;
-        }
+
+
         
-    }
+    
 
     
 }
@@ -114,8 +156,8 @@ section {
     background-image: url(../img/EP_darksection_background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
     padding: 1em;
-    overflow: hidden;
     margin: auto;
     padding-top: 2em;
 
@@ -135,7 +177,7 @@ section {
     }
 
     p.drink-name {
-        font-family: $font-family-drinknames;
+        font-family: $font-family-header;
         font-size: 1.5em;
         letter-spacing: 2px;
         color: $color-accent-light;
@@ -164,6 +206,8 @@ section {
         padding-top: 12px;
         transition: 250ms ease;
     }
+
+    
 }
    
     
@@ -173,7 +217,7 @@ section {
     background-color: $color-background-light;
     background-size: 10em;
     z-index: 2;
-    overflow: hidden;
+    position: relative;
 
     .row {
         margin: 0;
@@ -234,6 +278,48 @@ section {
         margin: auto;
         margin-top: 2em;
     }
+
+    .left-wheat {
+        position: absolute;
+        z-index: 2;
+        max-width: 55%;
+        height: auto;
+        left: -20em;
+        bottom: -4em;
+        transition-delay: .2s;
+        @media (min-width: 1560px) {
+            bottom: -6em;
+        }
+        @media (min-width: 1672px) {
+            bottom: -7em;
+        }
+        @media (min-width: 1860px) {
+            bottom: -8em;
+            max-width: 55%;
+        }
+    }
+
+    .right-wheat {
+        position: absolute;
+        z-index: 2;
+        max-width: 70%;
+        height: auto;
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            right: -15em;
+            bottom: -10em;
+            display: block;
+        }
+        @media (min-width: 1560px) {
+            bottom: -12em;
+        }
+        @media (min-width: 1672px) {
+            bottom: -15em;
+        }
+        @media (min-width: 1860px) {
+            bottom: -15em;
+        }
+    }
     
 }
     
@@ -242,7 +328,8 @@ section {
     background-image: url(../img/EP_darksection_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 2;
+    z-index: 1;
+    position: relative;
 
     p { 
         font-family: $font-family-serif;
@@ -290,6 +377,7 @@ section {
 
 #section-5 {
     background-color: $color-background-light;
+    position: relative;
     
     .row {
         @media (min-width: $breakpoint-small) {
@@ -321,7 +409,7 @@ section {
         transform: translate(14.3em);
         margin: auto;
         @media (min-width: $breakpoint-small) {
-            transform: scale(3);
+            transform: scale(4);
         }
     
     }
@@ -338,7 +426,7 @@ section {
         margin: auto;
         // box-shadow: 3px 3px 10px rgba(0,0,0,.6);
         @media (min-width: $breakpoint-small) {
-            transform: scale(3);
+            transform: scale(4);
         }
     }    
 
@@ -363,6 +451,48 @@ section {
         margin-bottom: 1em;
         @media (min-width: $breakpoint-small) {
         font-size: 1.4em;
+        }
+    }
+
+    .left-wheat {
+        position: absolute;
+        z-index: 2;
+        max-width: 55%;
+        height: auto;
+        left: -20em;
+        bottom: -14em;
+        transition-delay: .2s;
+        // @media (min-width: 1560px) {
+        //     bottom: -6em;
+        // }
+        // @media (min-width: 1672px) {
+        //     bottom: -7em;
+        // }
+        @media (min-width: 1860px) {
+            bottom: -14em;
+            max-width: 55%;
+        }
+    }
+
+    .right-wheat {
+        position: absolute;
+        z-index: 2;
+        max-width: 70%;
+        height: auto;
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            right: -15em;
+            bottom: -10em;
+            display: block;
+        }
+        @media (min-width: 1560px) {
+            bottom: -12em;
+        }
+        @media (min-width: 1672px) {
+            bottom: -15em;
+        }
+        @media (min-width: 1860px) {
+            bottom: -15em;
         }
     }
 }
@@ -449,9 +579,7 @@ section {
 }
 
 #section-7 {
-    background-image: url(../img/EP_darksection_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $color-background-light;
 
 
 .right {
@@ -486,7 +614,18 @@ img {
     padding: 0;
     color: white;
     overflow: hidden;
-    min-height: 100vh;
+    width: 100%;
+    height: auto;
+    
+    #welcome {
+        width: 100%;
+        height: auto;
+        z-index: 20;
+        svg {
+            max-height: 100vh !important;
+        }
+        
+    }
 
     video {
         @media (min-width: $breakpoint-small) {
@@ -497,41 +636,34 @@ img {
         min-height: 100%;
         width: auto;
         height: auto;
-        z-index: -20;
-        opacity: .6;
+        z-index: -1;
+        opacity: .4;
         display: initial;
         }
-        // background-image: url(/img/EP_hero_pic.jpg);
-        // background-repeat: no-repeat;
-        // background-size: cover;
         display: none;
-        
-    }
-
-    #welcome {
-        width: 100%;
-        height: auto;
-        z-index: 2;
-        max-width: 90%;
-        @media (min-width: $breakpoint-small) {
-            max-width: 48%;
         }
-    }
+
+    
 
 
     .bg-image {
+        @media (min-width: $breakpoint-small) {
+            opacity: 0;
+        }
+        background-image: url(../img/EP_hero_pic.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 15%;
         width: 100%;
-        height: 100vh;
+        height: auto;
         position: absolute;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        z-index: -1;
-        background-image: url(../img/EP_darksection_background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 15% 85%;
-        opacity: .6;
-}
+        z-index: 1;
+        opacity: .4;
+        }
+
+
 }
