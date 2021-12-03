@@ -55,7 +55,7 @@ body {
 // CLIP PATH
 .animate-clip-path,
 [data-sectionstate="inactive"] .animate-clip-path {
-    transition: all 1.1s ease-in-out;
+    transition: all 1.2s ease-in-out;
     opacity: 0;
     clip-path: circle(0px at -10% 80%);
 }
