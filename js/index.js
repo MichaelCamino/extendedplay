@@ -1,6 +1,6 @@
 // WELCOME ANIMATION
 
-const animation5 = lottie.loadAnimation({
+lottie.loadAnimation({
     container: welcome, // the dom element that will contain the animation
     renderer: 'svg',
     loop: true,
@@ -54,34 +54,13 @@ document.querySelectorAll('#section-2').forEach((div) => {
 
 // COFFEE ANIMATION
 
-// const animation3 = lottie.loadAnimation({
-//     container: coffee, // the dom element that will contain the animation
-//     renderer: 'svg',
-//     loop: false,
-//     autoplay: false,
-//     path: 'js/EP_coffee_animation/data.json' // the path to the animation json
-// });
-
-// const io_options_coffee = {
-//     // root: document.body,
-//     rootMargin: '-25% 0px -25% 0px',
-//     threshold: 0
-// };
-
-// const myobserver_coffee = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         if (entry.isIntersecting) {
-//             animation3.play();
-
-//         } else {
-//             animation3.stop();
-
-//         }
-//     });
-// }, io_options_coffee);
-// document.querySelectorAll('#section-4').forEach((div) => {
-//     myobserver_coffee.observe(div);
-// });
+const animation3 = lottie.loadAnimation({
+    container: coffee, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/EP_coffee_animation/data.json' // the path to the animation json
+});
 
 // DRINK FOOTER
 
@@ -95,34 +74,35 @@ const animation4 = lottie.loadAnimation({
 
 
 
-// PLAYLIST ANIMATION
+// MAP ANIMATION
 
-const animation6 = lottie.loadAnimation({
-    container: playlist, // the dom element that will contain the animation
+const animation5 = lottie.loadAnimation({
+    container: map, // the dom element that will contain the animation
     renderer: 'svg',
-    loop: false,
+    loop: true,
     autoplay: false,
-    path: 'js/EP_playlist_animation/data.json' // the path to the animation json
+    path: 'js/EP_map_animation/data.json' // the path to the animation json
 });
 
-const io_options_playlist = {
+const io_options_map = {
     // root: document.body,
     rootMargin: '-25% 0px -25% 0px',
     threshold: 0
 };
 
-const myobserver_playlist = new IntersectionObserver(entries => {
+const myobserver_map = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            animation6.play();
+            animation5.play();
 
         } else {
-            animation6.stop();
+            animation5.stop();
 
         }
     });
-}, io_options_playlist);
-document.querySelectorAll('#section-3').forEach((div) => {
-    myobserver_playlist.observe(div)
+}, io_options_map);
+document.querySelectorAll('#section-7').forEach((div) => {
+    myobserver_map.observe(div);
 });
+
 
