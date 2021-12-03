@@ -524,8 +524,13 @@ section {
     background-image: url(../img/EP_darksection_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 9em;
-    padding-bottom: 9em;
+    padding: 0;
+    margin: auto;
+    margin-bottom: -4em;
+    @media (min-width: $breakpoint-small) {
+        margin: auto;
+    }
+
     
     h3 {
         color: $color-accent-dark;
@@ -611,11 +616,14 @@ section {
 
 #section-7 {
     background-color: $color-background-light;
+    padding-top: 4.5em;
+    @media (min-width: $breakpoint-small) {
+    padding: 0;
+    }
 
     
-
-
-.right {
+    
+    .right {
     text-align: right;
 
     h3 {
