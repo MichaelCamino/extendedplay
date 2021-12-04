@@ -69,7 +69,9 @@ section {
 }
 
 #section-1 {
-        background-color: $color-background-light;
+        background-image: url(../img/section1_background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         z-index: 2;
         // overflow: hidden;
         margin: auto;
@@ -78,6 +80,12 @@ section {
     .waydown {
         margin-bottom: -1.5em;
     }
+
+    .s1-pic {
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 3em;
+    } 
 
 
     p { 
@@ -222,8 +230,9 @@ section {
 
 
 #section-3 {
-    background-color: $color-background-light;
-    background-size: 10em;
+    background-image: url(../img/section1_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 2;
     position: relative;
 
@@ -396,7 +405,9 @@ section {
 }
 
 #section-5 {
-    background-color: $color-background-light;
+    background-image: url(../img/section1_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     
     .row {
@@ -615,8 +626,9 @@ section {
 }
 
 #section-7 {
-    background-color: $color-background-light;
-    padding-top: 4.5em;
+    background-image: url(../img/section1_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     @media (min-width: $breakpoint-small) {
     padding: 0;
     }
