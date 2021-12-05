@@ -69,13 +69,17 @@ section {
 }
 
 #section-1 {
-        background-image: url(../img/section1_background.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color: $color-background-light;
         z-index: 2;
-        // overflow: hidden;
+        padding-top: 5em;
+        padding-bottom: 0;
         margin: auto;
         position: relative;
+        @media (min-width: $breakpoint-small) {
+        margin: auto;
+        padding: 1em 0;
+        }
+
 
     .waydown {
         margin-bottom: -1.5em;
@@ -134,14 +138,11 @@ section {
     }
 
     .right-wheat {
-        display: none;
-        @media (min-width: $breakpoint-small) {
         position: absolute;
         z-index: 2;
         max-width: 70%;
         height: auto;
-        display: block;
-        }
+        display: none;
         @media (min-width: $breakpoint-small) {
             right: -15em;
             bottom: -10em;
@@ -158,7 +159,62 @@ section {
         }
     }
 
+
+
+
     
+    
+    .bg-inbetweenbottom {
+        z-index: -6;
+        position: absolute;
+        bottom: -4em;
+        left: 0;
+        width: 100%;
+        height: auto;
+        @media (min-width: 1500px) {
+            bottom: -6em;
+        }
+        @media (min-width: 2000px) {
+            bottom: -7em;
+        }
+
+    }
+
+    #verticallines {
+        position: absolute;
+        transform: rotate(90deg) scale(.2);
+        transform-origin: center;
+        bottom: -39.5em;
+        left: 2.5em;
+        z-index: -5;
+
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+
+        @media (min-width: $breakpoint-large) {
+            position: absolute;
+            z-index: 2;
+            transform-origin: bottom;
+            display: block;
+            transform: scale(.7);
+            left: -6.3em;
+            bottom: -25em;
+        }
+        @media (min-width: $breakpoint-xlarge) {
+            left: 0;
+            bottom: -28em;
+            transform: scale(.8);
+            }
+        @media (min-width: $breakpoint-xxlarge) {
+                left: 7em;
+                bottom: -30em;
+                transform: scaley(1.2);
+                transform-origin: center;
+                }
+    
+    }
+
 
 
 
@@ -168,6 +224,8 @@ section {
     
 }
 
+
+
 #section-2 {
     background-image: url(../img/EP_darksection_background.png);
     background-repeat: no-repeat;
@@ -175,12 +233,19 @@ section {
     position: relative;
     padding: 1em;
     margin: auto;
-    padding-top: 2em;
+    padding-top: 8em;
+    padding-bottom: 6em;
+    @media (min-width: $breakpoint-small) {
+        padding-top: 8em;
+        padding-bottom: 6em;
+    }
+
 
     
     .row {
         flex-direction: row-reverse;
     }
+
 
     .menu {
         text-align: center;
@@ -230,16 +295,34 @@ section {
 
 
 #section-3 {
-    background-image: url(../img/section1_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $color-background-light;
     z-index: 2;
     position: relative;
 
     .row {
-        margin: 0;
+        @media (min-width: $breakpoint-small)
+        {
+        
+        
+        }
     }
 
+    .bg-inbetweentop {
+        position: absolute;
+        top: -3em;
+        left: 0;
+        width: 100%;
+        height: auto;
+        @media (min-width: 1500px) {
+            top: -6em;
+        }
+        @media (min-width: 2000px) {
+            top: -7em;
+        }
+
+    }
+
+    
     a {
         text-decoration: none;
         color: $color-accent-light;
@@ -261,7 +344,6 @@ section {
         max-width: 60%;
         text-align: center;
         margin: auto;
-        margin-bottom: 3em;
     }
 
     .big-l {
@@ -278,16 +360,25 @@ section {
        
     }  
 
+    .vinylpic {
+        border-radius: 50%;
+        margin-top: 4em;
+        @media (min-width: $breakpoint-small) {
+        display: none;
+        }
+
+    }
+
     video {
         @media (min-width: $breakpoint-small) {
-            
+        display: block;
         width: 100%;
         height: auto;
-        margin-right: 4em;
         margin: auto;
         transform: scale(1);
         transform-origin: right center;
         }
+        display: none;
         transform: scale(.8);
         border-radius: 50%;
         width: 100%;
@@ -342,6 +433,25 @@ section {
             bottom: -15em;
         }
     }
+
+    .bg-inbetweenbottom {
+        position: absolute;
+        bottom: -1.5em;
+        left: 0;
+        width: 100%;
+        height: auto;
+        @media (min-width: $breakpoint-small) {
+        bottom: -3em;
+        }
+
+        @media (min-width: 1500px) {
+            bottom: -6em;
+        }
+        @media (min-width: 2000px) {
+            bottom: -7em;
+        }
+
+    }
     
 }
     
@@ -350,8 +460,14 @@ section {
     background-image: url(../img/EP_darksection_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: 1;
+    z-index: -1;
     position: relative;
+    padding-bottom:  3em;
+    @media (min-width: $breakpoint-small) {
+    padding: 1em 0;
+    }
+
+
 
     p { 
         font-family: $font-family-serif;
@@ -385,6 +501,7 @@ section {
     }
 
     .coffeeimg {
+        margin-top: 4em;
         @media (min-width: $breakpoint-small) {
             display: none;
             }
@@ -405,10 +522,14 @@ section {
 }
 
 #section-5 {
-    background-image: url(../img/section1_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $color-background-light;
     position: relative;
+    padding-top: 2em;
+    @media (min-width: $breakpoint-small) {
+    padding: 1em 0;
+    }
+
+
     
     .row {
         @media (min-width: $breakpoint-small) {
@@ -429,6 +550,25 @@ section {
         flex-wrap: wrap;
         margin: 0;
 
+        }
+
+        .bg-inbetweentop {
+            z-index: 0;
+            position: absolute;
+            top: -3em;
+            left: 0;
+            width: 100%;
+            height: auto;
+            @media (min-width: $breakpoint-medium) {
+                top: -6em;
+            }
+            @media (min-width: 1500px) {
+                top: -6em;
+            }
+            @media (min-width: 2000px) {
+                top: -7em;
+            }
+    
         }
 
     .staff {
@@ -529,17 +669,34 @@ section {
             bottom: -7em;
         }
     }
+
+    .bg-inbetweenbottom {
+        position: absolute;
+        bottom: -4em;
+        left: 0;
+        width: 100%;
+        height: auto;
+        @media (min-width: 1500px) {
+            bottom: -6em;
+        }
+        @media (min-width: 2000px) {
+            bottom: -7em;
+        }
+
+    }
 }
 
 #section-6 {
     background-image: url(../img/EP_darksection_background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0;
+    padding-top: 7em;
+    padding-bottom: 7em;
     margin: auto;
     margin-bottom: -4em;
     @media (min-width: $breakpoint-small) {
         margin: auto;
+        padding: 1em 0;
     }
 
     
@@ -626,14 +783,26 @@ section {
 }
 
 #section-7 {
-    background-image: url(../img/section1_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: $color-background-light;
+    position: relative;
     @media (min-width: $breakpoint-small) {
-    padding: 0;
+    padding: 1em 0;
     }
 
-    
+    .bg-inbetweentop {
+        position: absolute;
+        top: -3em;
+        left: 0;
+        width: 100%;
+        height: auto;
+        @media (min-width: 1500px) {
+            top: -6em;
+        }
+        @media (min-width: 2000px) {
+            top: -7em;
+        }
+
+    }
     
     .right {
     text-align: right;
@@ -700,6 +869,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 }
 

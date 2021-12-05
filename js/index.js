@@ -105,4 +105,12 @@ document.querySelectorAll('#section-7').forEach((div) => {
     myobserver_map.observe(div);
 });
 
+const animation6 = lottie.loadAnimation({
+    container: verticallines, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'js/EP_line_animation/data.json' // the path to the animation json
+});
+
 
