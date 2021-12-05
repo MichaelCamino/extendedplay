@@ -69,7 +69,7 @@ section {
 }
 
 #section-1 {
-        background-color: $color-background-light;
+        background-image: url(/img/section1_background.png);
         z-index: 2;
         padding-top: 5em;
         padding-bottom: 0;
@@ -137,48 +137,66 @@ section {
         }
     }
 
-    .right-wheat {
+    .right-splatter-1 {
         position: absolute;
-        z-index: 2;
-        max-width: 70%;
+        z-index: -1;
         height: auto;
-        display: none;
+        right: -5em;
+        bottom: -5em;
         @media (min-width: $breakpoint-small) {
-            right: -15em;
-            bottom: -10em;
-            display: block;
-        }
-        @media (min-width: 1560px) {
+            right: -20em;
             bottom: -12em;
         }
-        @media (min-width: 1672px) {
-            bottom: -15em;
-        }
-        @media (min-width: 1860px) {
-            bottom: -15em;
+        @media (min-width: $breakpoint-xxlarge) {
+            margin-right: 10em;
+            right: -20em;
+            bottom: -12em;
         }
     }
 
-
-
-
-    
-    
-    .bg-inbetweenbottom {
-        z-index: -6;
+    .right-splatter-2 {
         position: absolute;
-        bottom: -3.5em;
-        left: 0;
-        width: 100%;
+        z-index: -1;
+        max-width: 100%;
         height: auto;
-        @media (min-width: 1500px) {
-            bottom: -6em;
+        right: -5em;
+        bottom: -5em;
+        @media (min-width: $breakpoint-small) {
+            right: -20em;
+            bottom: -12em;
+            display: block;
         }
-        @media (min-width: 2000px) {
-            bottom: -7em;
+        @media (min-width: $breakpoint-xxlarge) {
+            margin-right: 10em;
+            right: -20em;
+            bottom: -12em;
         }
-
     }
+
+    .right-splatter-3 {
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        height: auto;
+        right: -5em;
+        bottom: -5em;
+        @media (min-width: $breakpoint-small) {
+            right: -20em;
+            bottom: -12em;
+            display: block;
+        }
+        @media (min-width: $breakpoint-xxlarge) {
+            margin-right: 10em;
+            right: -20em;
+            bottom: -12em;
+        }
+    }
+
+
+
+    
+    
+    
 
     #verticallines {
         position: absolute;
@@ -187,11 +205,7 @@ section {
         bottom: -39.5em;
         left: 2.5em;
         z-index: -5;
-
-        @media (min-width: $breakpoint-small) {
-            display: none;
-        }
-
+        display: none;
         @media (min-width: $breakpoint-large) {
             position: absolute;
             z-index: 2;
@@ -227,23 +241,32 @@ section {
 
 
 #section-2 {
-    background-image: url(../img/EP_darksection_background.png);
+    background-image: url(../img/EP_darksection_background_straight.png);
+    background-color: $color-background-light;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding: 1em;
     margin: auto;
-    padding-top: 8em;
-    padding-bottom: 6em;
-    @media (min-width: $breakpoint-small) {
-        padding-top: 8em;
-        padding-bottom: 6em;
-    }
 
 
     
     .row {
         flex-direction: row-reverse;
+    }
+
+    .left-splatter {
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        height: auto;
+        right: -5em;
+        bottom: -5em;
+        @media (min-width: $breakpoint-small) {
+            right: -20em;
+            bottom: -12em;
+            display: block;
+        }
     }
 
 
@@ -288,6 +311,47 @@ section {
         transition: 250ms ease;
     }
 
+    .left-splatter-1 {
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        height: auto;
+        right: -5em;
+        bottom: -5em;
+        @media (min-width: $breakpoint-small) {
+            right: -20em;
+            bottom: -12em;
+        }
+    }
+
+    .left-splatter-2 {
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        height: auto;
+        right: -5em;
+        bottom: -5em;
+        @media (min-width: $breakpoint-small) {
+            right: -20em;
+            bottom: -12em;
+            display: block;
+        }
+    }
+
+    .left-splatter-3 {
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        height: auto;
+        right: -5em;
+        bottom: -5em;
+        @media (min-width: $breakpoint-small) {
+            right: -20em;
+            bottom: -12em;
+            display: block;
+        }
+    }
+
     
 }
    
@@ -295,34 +359,10 @@ section {
 
 
 #section-3 {
+    background-image: url(../img/section1_background.png);
     background-color: $color-background-light;
-    z-index: 2;
+    z-index: 6;
     position: relative;
-
-    .row {
-        @media (min-width: $breakpoint-small)
-        {
-        
-        
-        }
-    }
-
-    .bg-inbetweentop {
-        position: absolute;
-        top: -3em;
-        left: 0;
-        width: 100%;
-        height: auto;
-        @media (min-width: 1500px) {
-            top: -6em;
-        }
-        @media (min-width: 2000px) {
-            top: -7em;
-        }
-
-    }
-
-    
     a {
         text-decoration: none;
         color: $color-accent-light;
@@ -362,7 +402,6 @@ section {
 
     .vinylpic {
         border-radius: 50%;
-        margin-top: 4em;
         @media (min-width: $breakpoint-small) {
         display: none;
         }
@@ -392,10 +431,10 @@ section {
         @media (min-width: $breakpoint-small) {
         position: absolute;
         z-index: 2;
-        max-width: 60%;
+        max-width: 70%;
         height: auto;
         left: -20em;
-        bottom: -4em;
+        top: -9em;
         transition-delay: .2s;
         display: block;
         }
@@ -419,8 +458,12 @@ section {
         height: auto;
         display: none;
         @media (min-width: $breakpoint-small) {
+            position: absolute;
+            z-index: 2;
+            max-width: 70%;
+            height: auto;
             right: -15em;
-            bottom: -10em;
+            bottom: -6em;
             display: block;
         }
         @media (min-width: 1560px) {
@@ -434,38 +477,18 @@ section {
         }
     }
 
-    .bg-inbetweenbottom {
-        position: absolute;
-        bottom: -1.5em;
-        left: 0;
-        width: 100%;
-        height: auto;
-        @media (min-width: $breakpoint-small) {
-        bottom: -3em;
-        }
-
-        @media (min-width: 1500px) {
-            bottom: -6em;
-        }
-        @media (min-width: 2000px) {
-            bottom: -7em;
-        }
-
-    }
+    
     
 }
     
 
 #section-4 {
-    background-image: url(../img/EP_darksection_background.png);
+    background-image: url(../img/EP_darksection_background_straight.png);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    background-color: $color-background-light;
+    z-index: 2;
     position: relative;
-    padding-bottom:  3em;
-    @media (min-width: $breakpoint-small) {
-    padding: 1em 0;
-    }
 
 
 
@@ -522,11 +545,12 @@ section {
 }
 
 #section-5 {
-    background-color: $color-background-light;
+    background-image: url(../img/section1_background.png);
     position: relative;
-    padding-top: 2em;
+    padding-bottom: 3em;
     @media (min-width: $breakpoint-small) {
     padding: 1em 0;
+    z-index: 3;
     }
 
 
@@ -552,24 +576,7 @@ section {
 
         }
 
-        .bg-inbetweentop {
-            z-index: 0;
-            position: absolute;
-            top: -3em;
-            left: 0;
-            width: 100%;
-            height: auto;
-            @media (min-width: $breakpoint-medium) {
-                top: -6em;
-            }
-            @media (min-width: 1500px) {
-                top: -6em;
-            }
-            @media (min-width: 2000px) {
-                top: -7em;
-            }
-    
-        }
+        
 
     .staff {
     text-align: center;
@@ -656,7 +663,7 @@ section {
         display: none;
         @media (min-width: $breakpoint-small) {
             right: -15em;
-            bottom: -8em;
+            bottom: -6em;
             display: block;
         }
         @media (min-width: 1560px) {
@@ -670,33 +677,36 @@ section {
         }
     }
 
-    .bg-inbetweenbottom {
-        position: absolute;
-        bottom: -3.5em;
-        left: 0;
-        width: 100%;
-        height: auto;
-        @media (min-width: 1500px) {
-            bottom: -6em;
-        }
-        @media (min-width: 2000px) {
-            bottom: -7em;
-        }
-
-    }
+    
 }
 
 #section-6 {
-    background-image: url(../img/EP_darksection_background.png);
+    background-image: url(../img/EP_darksection_background_straight.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 7em;
-    padding-bottom: 7em;
     margin: auto;
-    margin-bottom: -4em;
-    @media (min-width: $breakpoint-small) {
-        margin: auto;
-        padding: 1em 0;
+    padding-top: 10em;
+    padding-bottom: 10em;
+    z-index: 3;
+    position: relative;
+    
+    .left-wheat {
+        display: none;
+        z-index: -1;
+        @media (min-width: $breakpoint-small) {
+        position: absolute;
+        z-index: 10;
+        max-width: 55%;
+        height: auto;
+        left: -10em;
+        bottom: 0;
+        transition-delay: .2s;
+        display: block;
+        }
+        @media (min-width: 1860px) {
+            bottom: -14em;
+            max-width: 55%;
+        }
     }
 
     
@@ -785,33 +795,19 @@ section {
 #section-7 {
     background-color: $color-background-light;
     position: relative;
+    margin-top: 3em; 
+    z-index: 1;
     @media (min-width: $breakpoint-small) {
+        margin: auto;
     padding: 1em 0;
     }
 
-    .bg-inbetweentop {
-        position: absolute;
-        top: -3em;
-        left: 0;
-        width: 100%;
-        height: auto;
-        @media (min-width: 1500px) {
-            top: -6em;
-        }
-        @media (min-width: 2000px) {
-            top: -7em;
-        }
-
-    }
+    
     
     .right {
     text-align: right;
 
     h3 {
-        @media (min-width: $breakpoint-small) {
-        font-size: 1.8em;
-        }
-
         font-family: $font-family-sans;
         color: $color-accent-dark;
         font-size: 2em;
@@ -822,6 +818,14 @@ section {
         transition:  all .4s ease;
         &:hover {
             color: $color-accent-light;
+            }
+        @media (min-width: $breakpoint-small) {
+        font-size: 1.5em;
+        line-height: 5vh;
+        }
+        @media (min-width: $breakpoint-medium) {
+            font-size: 1.5em;
+            line-height: 5vh;
             }
         }
 
@@ -908,7 +912,7 @@ img {
         min-height: 100%;
         width: auto;
         height: auto;
-        z-index: -1;
+        z-index: -2;
         opacity: .4;
         display: initial;
         }
