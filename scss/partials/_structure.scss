@@ -633,7 +633,7 @@ section {
     background-size: cover;
     margin: auto;
     padding-top: 10em;
-    padding-bottom: 10em;
+    padding-bottom: 5em;
     z-index: -1;
     position: relative;
     
@@ -742,7 +742,6 @@ section {
 #section-7 {
     background-image: url(../img/section1_background.png);
     position: relative;
-    margin-top: 3em; 
     z-index: 1;
     @media (min-width: $breakpoint-small) {
         margin: auto;
