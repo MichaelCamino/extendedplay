@@ -940,7 +940,7 @@ section {
 }
 @media (min-width: 1600px) {
   #section-5 .left-splatter-1 {
-    right: -10em;
+    right: -25em;
     bottom: 0;
   }
 }
@@ -1004,29 +1004,6 @@ section {
   padding-bottom: 5em;
   z-index: -1;
   position: relative;
-}
-#section-6 .left-wheat {
-  display: none;
-  z-index: -1;
-}
-@media (min-width: 768px) {
-  #section-6 .left-wheat {
-    position: absolute;
-    z-index: 10;
-    max-width: 55%;
-    height: auto;
-    left: -10em;
-    bottom: 0;
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
-    display: block;
-  }
-}
-@media (min-width: 1860px) {
-  #section-6 .left-wheat {
-    bottom: -14em;
-    max-width: 55%;
-  }
 }
 #section-6 h3 {
   color: #9c9c9c;

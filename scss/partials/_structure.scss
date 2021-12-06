@@ -579,7 +579,7 @@ section {
             bottom: -15em;
         }
         @media (min-width: $breakpoint-xlarge) {
-            right: -10em;
+            right: -25em;
             bottom: 0;
         }
     }
@@ -636,25 +636,6 @@ section {
     padding-bottom: 5em;
     z-index: -1;
     position: relative;
-    
-    .left-wheat {
-        display: none;
-        z-index: -1;
-        @media (min-width: $breakpoint-small) {
-        position: absolute;
-        z-index: 10;
-        max-width: 55%;
-        height: auto;
-        left: -10em;
-        bottom: 0;
-        transition-delay: .2s;
-        display: block;
-        }
-        @media (min-width: 1860px) {
-            bottom: -14em;
-            max-width: 55%;
-        }
-    }
 
     
     h3 {
