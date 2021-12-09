@@ -105,12 +105,35 @@ document.querySelectorAll('#section-7').forEach((div) => {
     myobserver_map.observe(div);
 });
 
+// SECTION 1 ANIMATION
+
 const animation6 = lottie.loadAnimation({
-    container: verticallines, // the dom element that will contain the animation
+    container: way, // the dom element that will contain the animation
     renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: 'js/EP_line_animation/data.json' // the path to the animation json
+    loop: false,
+    autoplay: false,
+    path: 'js/EP_section1_animation/data.json' // the path to the animation json
+});
+
+const io_options_section1 = {
+    // root: document.body,
+    rootMargin: '-25% 0px -25% 0px',
+    threshold: 0
+};
+
+const myobserver_section1 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animation6.play();
+
+        } else {
+            animation6.stop();
+
+        }
+    });
+}, io_options_section1);
+document.querySelectorAll('#section-1').forEach((div) => {
+    myobserver_section1.observe(div);
 });
 
 

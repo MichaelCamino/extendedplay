@@ -84,7 +84,17 @@ section {
 
 
     .waydown {
-        
+        display: block;
+        @media (min-width: $breakpoint-small) {
+            display: none;
+        }
+        }
+
+    #way {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            display: flex;
+        }
     }
 
     .s1-pic {
@@ -255,7 +265,7 @@ section {
         font-size: 2em;
         letter-spacing: 2px;
         color: $color-accent-light;
-        font-weight: 900;
+        font-weight: 400;
         margin: auto;
         margin-top: 2em;
         margin-bottom: .4em;
@@ -512,19 +522,23 @@ section {
         transform: translate(14.3em);
         margin: auto;
         @media (min-width: $breakpoint-small) {
-            transform: scale(4);
+            transform: scale(2);
         }
     
     }
 
     .players {
-        max-width: 80%;
+        font-size: 6em;
+        font-family: $font-family-header;
+        font-weight: 400;
+        color: $color-accent-light;
+        max-width: 100%;
         margin: auto;
-        margin-top: 1em;
-        margin-bottom: 1.5em;
+        margin-top: .3em;
+        margin-bottom: .4em;
         @media (min-width: $breakpoint-small) {
-            max-width: 60%;
-            margin-bottom: 2em;
+            max-width: 100%;
+            font-size: 4.2em;
         }
 
     }
@@ -532,9 +546,8 @@ section {
     img.right {
         transform: translate(-14.3em);
         margin: auto;
-        // box-shadow: 3px 3px 10px rgba(0,0,0,.6);
         @media (min-width: $breakpoint-small) {
-            transform: scale(4);
+            transform: scale(2);
         }
     }    
 

@@ -441,6 +441,24 @@ section {
     padding: 1em 0;
   }
 }
+#section-1 .waydown {
+  display: block;
+}
+@media (min-width: 768px) {
+  #section-1 .waydown {
+    display: none;
+  }
+}
+#section-1 #way {
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-1 #way {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 #section-1 .s1-pic {
   border-radius: 50%;
   margin: auto;
@@ -608,11 +626,11 @@ section {
   }
 }
 #section-2 p.drink-name {
-  font-family: Lobster, cursive;
+  font-family: calgary-script-ot, sans-serif;
   font-size: 2em;
   letter-spacing: 2px;
   color: #d4b05b;
-  font-weight: 900;
+  font-weight: 400;
   margin: auto;
   margin-top: 2em;
   margin-bottom: 0.4em;
@@ -864,20 +882,24 @@ section {
 }
 @media (min-width: 768px) {
   #section-5 img.left {
-    -webkit-transform: scale(4);
-            transform: scale(4);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
 }
 #section-5 .players {
-  max-width: 80%;
+  font-size: 6em;
+  font-family: calgary-script-ot, sans-serif;
+  font-weight: 400;
+  color: #d4b05b;
+  max-width: 100%;
   margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-top: 0.3em;
+  margin-bottom: 0.4em;
 }
 @media (min-width: 768px) {
   #section-5 .players {
-    max-width: 60%;
-    margin-bottom: 2em;
+    max-width: 100%;
+    font-size: 4.2em;
   }
 }
 #section-5 img.right {
@@ -887,8 +909,8 @@ section {
 }
 @media (min-width: 768px) {
   #section-5 img.right {
-    -webkit-transform: scale(4);
-            transform: scale(4);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
 }
 #section-5 p.name {
@@ -1631,8 +1653,8 @@ body {
 
 [data-sectionstate=active] .animate-slide-left-section-5 {
   opacity: 1;
-  -webkit-transform: translate(-200px, 0);
-          transform: translate(-200px, 0);
+  -webkit-transform: translate(-250px, 0);
+          transform: translate(-250px, 0);
 }
 
 .animate-slide-left-section-6,
@@ -1691,8 +1713,8 @@ body {
 
 [data-sectionstate=active] .animate-slide-right-section-5 {
   opacity: 1;
-  -webkit-transform: translate(200px, 0);
-          transform: translate(200px, 0);
+  -webkit-transform: translate(250px, 0);
+          transform: translate(250px, 0);
 }
 
 .animate-drop-in-with-delay *,
