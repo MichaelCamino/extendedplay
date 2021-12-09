@@ -153,7 +153,7 @@ hr {
   color: rgba(0, 0, 0, 0.9);
   font-weight: 700;
   font-size: 15px;
-  background-color: #d4b05b;
+  background-color: #d5b261;
   padding: 1em;
   margin: 1em 0;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -606,7 +606,7 @@ section {
   background-size: cover;
   position: relative;
   padding: 1em;
-  padding-top: 2em;
+  padding-top: 1.5em;
   margin: auto;
 }
 #section-2 .row {
@@ -630,7 +630,7 @@ section {
   font-family: calgary-script-ot, sans-serif;
   font-size: 2em;
   letter-spacing: 2px;
-  color: #d4b05b;
+  color: #d5b261;
   font-weight: 400;
   margin: auto;
   margin-top: 2em;
@@ -643,6 +643,26 @@ section {
   font-family: playfair-display, serif;
   font-weight: 400;
   margin: auto;
+}
+#section-2 #wreath {
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-2 #wreath {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+#section-2 .wreathpic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (min-width: 768px) {
+  #section-2 .wreathpic {
+    display: none;
+  }
 }
 #section-2 .button {
   font-family: montserrat, sans-serif;
@@ -662,7 +682,7 @@ section {
 }
 #section-3 a {
   text-decoration: none;
-  color: #d4b05b;
+  color: #d5b261;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -798,7 +818,7 @@ section {
 }
 #section-4 a {
   text-decoration: none;
-  color: #d4b05b;
+  color: #d5b261;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
@@ -887,7 +907,7 @@ section {
   font-size: 6em;
   font-family: calgary-script-ot, sans-serif;
   font-weight: 400;
-  color: #d4b05b;
+  color: #d5b261;
   max-width: 100%;
   margin: auto;
   margin-top: 0.3em;
@@ -1036,11 +1056,11 @@ section {
   transition: all 0.4s ease;
 }
 #section-6 h3 a:hover {
-  color: #d4b05b;
+  color: #d5b261;
 }
 #section-6 p {
   font-weight: 100;
-  color: #d4b05b;
+  color: #d5b261;
   max-width: 100%;
   font-size: 1.3em;
   margin-bottom: 0.5em;
@@ -1061,7 +1081,7 @@ section {
   transition: all 0.4s ease;
 }
 #section-6 i:hover {
-  color: #d4b05b;
+  color: #d5b261;
 }
 #section-6 .hours {
   margin-bottom: 0;
@@ -1132,7 +1152,7 @@ section {
   transition: all 0.4s ease;
 }
 #section-7 .right h3:hover {
-  color: #d4b05b;
+  color: #d5b261;
 }
 @media (min-width: 768px) {
   #section-7 .right h3 {
@@ -1147,7 +1167,7 @@ section {
   }
 }
 #section-7 .right .entrance {
-  color: #d4b05b;
+  color: #d5b261;
   line-height: 3vh;
   margin: auto;
   margin-bottom: 1em;
@@ -1334,7 +1354,7 @@ section {
   content: none;
 }
 .site-header .site-nav .menu-button svg {
-  fill: #d4b05b;
+  fill: #d5b261;
 }
 .site-header .site-nav .menu-button svg:hover {
   fill: #fdf0b9;

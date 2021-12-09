@@ -241,7 +241,7 @@ section {
     background-size: cover;
     position: relative;
     padding: 1em;
-    padding-top: 2em;
+    padding-top: 1.5em;
     margin: auto;
 
 
@@ -258,6 +258,7 @@ section {
         margin: auto;
         @media (min-width: $breakpoint-small) {
         width: auto;
+        
         }
     }
 
@@ -282,7 +283,17 @@ section {
     }
 
     #wreath {
-        
+        display: none;
+        @media (min-width: $breakpoint-small) {
+        display: flex;
+        }
+    }
+
+    .wreathpic {
+        display: flex;
+        @media (min-width: $breakpoint-small) {
+        display: none;
+        }
     }
 
     .button {
