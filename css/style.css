@@ -643,10 +643,6 @@ section {
   font-weight: 400;
   margin: auto;
 }
-#section-2 #wreath {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
 #section-2 .button {
   font-family: montserrat, sans-serif;
   font-size: 0.9em;
