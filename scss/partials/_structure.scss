@@ -241,10 +241,31 @@ section {
     background-size: cover;
     position: relative;
     padding: 1em;
-    padding-top: 1.5em;
+    padding-top: 4em;
+    padding-bottom: 6em;
     margin: auto;
 
+    @media (min-width: $breakpoint-small) {
+        .menu-parent {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(4, auto);
+            padding-bottom: 2em;
+        }
+        .wreathwrapper {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .menu {
+            grid-column: 1 / 2;
+            grid-row: 1 / 5;
+        }
 
+        .full-menu-button {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+    }
     
     .row {
         flex-direction: row-reverse;
@@ -254,23 +275,17 @@ section {
     .menu {
         text-align: center;
         font-size: .8em;
-        width: 100%;
-        margin: auto;
-        @media (min-width: $breakpoint-small) {
-        width: auto;
         
-        }
     }
 
     p.drink-name {
         font-family: $font-family-header;
-        font-size: 2em;
+        font-size: 3em;
         letter-spacing: 2px;
         color: $color-accent-light;
         font-weight: 400;
         margin: auto;
         margin-top: 2em;
-        margin-bottom: .4em;
     }
 
     p.drink-ingredients {
@@ -298,8 +313,7 @@ section {
 
     .button {
         font-family: $font-family-drinknames;
-        font-size: .9em;
-        padding-top: 12px;
+        font-size: .7em;
         transition: 250ms ease;
     }
 
@@ -318,6 +332,7 @@ section {
     background-color: $color-background-light;
     z-index: 6;
     position: relative;
+    padding-top: 5em;
     a {
         text-decoration: none;
         color: $color-accent-light;
@@ -434,6 +449,7 @@ section {
     background-color: $color-background-light;
     z-index: 2;
     position: relative;
+    padding-top: 4em;
 
 
 
@@ -469,7 +485,6 @@ section {
     }
 
     .coffeeimg {
-        margin-top: 4em;
         @media (min-width: $breakpoint-small) {
             display: none;
             }
@@ -494,9 +509,9 @@ section {
 #section-5 {
     background-image: url(../img/section1_background.png);
     position: relative;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
+    padding-top: 4em;
     @media (min-width: $breakpoint-small) {
-    padding: 1em 0;
     z-index: 3;
     }
 
@@ -531,7 +546,7 @@ section {
     }
 
     img.left {
-        transform: translate(14.3em);
+        transform: translate(17.9em);
         margin: auto;
         @media (min-width: $breakpoint-small) {
             transform: scale(2);
@@ -556,7 +571,7 @@ section {
     }
 
     img.right {
-        transform: translate(-14.3em);
+        transform: translate(-17.9em);
         margin: auto;
         @media (min-width: $breakpoint-small) {
             transform: scale(2);
@@ -658,11 +673,23 @@ section {
     background-size: cover;
     margin: auto;
     padding-top: 10em;
-    padding-bottom: 5em;
+    padding-bottom: 0;
     z-index: -1;
     position: relative;
+    @media (min-width: $breakpoint-small) {
+        padding-top: 14em;
+        padding-bottom: 9.5em;
+    }
 
     
+    h2 {
+        color: $color-accent-light;
+        font-family: $font-family-header;
+        font-size: 10em;
+        font-weight: 200;
+        line-height: 0;
+    }
+
     h3 {
         color: $color-accent-dark;
         font-family: $font-family-sans;
@@ -749,9 +776,9 @@ section {
     background-image: url(../img/section1_background.png);
     position: relative;
     z-index: 1;
+    padding-top: 4em;
     @media (min-width: $breakpoint-small) {
         margin: auto;
-    padding: 1em 0;
     }
 
     
@@ -759,13 +786,27 @@ section {
     .right {
     text-align: right;
 
+    h2 {
+        color: $color-accent-light;
+        font-family: $font-family-header;
+        font-weight: 200;
+        font-size: 10em;
+        line-height: 0;
+        margin-top: .5em;
+        margin-right: .4em;
+        @media (min-width: $breakpoint-small) {
+            margin-right: 0;
+           }
+    }
+
+
     h3 {
         font-family: $font-family-sans;
         color: $color-accent-dark;
         font-size: 2em;
         font-style: italic;
         font-weight: 400;
-        line-height: 3.5vh;
+        line-height: 1;
         margin: auto;
         transition:  all .4s ease;
         &:hover {
@@ -773,11 +814,9 @@ section {
             }
         @media (min-width: $breakpoint-small) {
         font-size: 1.5em;
-        line-height: 5vh;
-        }
+       }
         @media (min-width: $breakpoint-medium) {
             font-size: 1.5em;
-            line-height: 5vh;
             }
         }
 
@@ -787,7 +826,7 @@ section {
             }
 
             color: $color-accent-light;
-            line-height: 3vh;
+            line-height: 1;
             margin: auto;
             margin-bottom: 1em;
             font-size: 1.3em;
@@ -797,10 +836,9 @@ section {
         .hours {
             @media (min-width: $breakpoint-small) {
                 font-size: .9em;
-                line-height: 2vh;
                 }
             margin: auto;
-            line-height: 2.2vh;
+            line-height: 1.1;
             font-size: 1.1em;
         }
 
@@ -814,17 +852,6 @@ address {
     }
 }
 
-
-img {
-    max-width: 100%;
-    margin: auto;
-    margin-right: -.5em;
-}
-
-.button {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .left-splatter-1 {
     display: none;
@@ -867,8 +894,8 @@ img {
     }
 }
 
-
 }
+
 
 
 

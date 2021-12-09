@@ -177,8 +177,8 @@ hr {
   height: 490%;
   width: 140%;
   background: #f2f2f2;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
   -webkit-transform: translateX(-110%) translateY(-10%) rotate(45deg);
           transform: translateX(-110%) translateY(-10%) rotate(45deg);
 }
@@ -187,12 +187,24 @@ hr {
   margin-top: 3em;
 }
 .below-menu:after {
-  -webkit-transform: translateX(-120%) translateY(-10%) rotate(45deg);
-          transform: translateX(-120%) translateY(-10%) rotate(45deg);
+  -webkit-transform: translateX(-135%) translateY(-10%) rotate(45deg);
+          transform: translateX(-135%) translateY(-10%) rotate(45deg);
 }
 .below-menu:hover::after {
   -webkit-transform: translateX(-20%) translateY(-25%) rotate(45deg);
           transform: translateX(-20%) translateY(-25%) rotate(45deg);
+}
+
+.below-map {
+  margin-top: 3em;
+}
+.below-map:after {
+  -webkit-transform: translateX(-170%) translateY(5%) rotate(45deg);
+          transform: translateX(-170%) translateY(5%) rotate(45deg);
+}
+.below-map:hover::after {
+  -webkit-transform: translateX(-40%) translateY(-25%) rotate(45deg);
+          transform: translateX(-40%) translateY(-25%) rotate(45deg);
 }
 
 .playlist:after {
@@ -606,8 +618,76 @@ section {
   background-size: cover;
   position: relative;
   padding: 1em;
-  padding-top: 1.5em;
+  padding-top: 4em;
+  padding-bottom: 6em;
   margin: auto;
+}
+@media (min-width: 768px) {
+  #section-2 .menu-parent {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    -ms-grid-rows: (auto)[4];
+    grid-template-rows: repeat(4, auto);
+    padding-bottom: 2em;
+  }
+  #section-2 .menu-parent > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #section-2 .menu-parent > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  #section-2 .menu-parent > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #section-2 .menu-parent > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  #section-2 .menu-parent > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  #section-2 .menu-parent > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  #section-2 .menu-parent > *:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  #section-2 .menu-parent > *:nth-child(8) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  #section-2 .wreathwrapper {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  #section-2 .menu {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 4;
+    grid-row: 1/5;
+  }
+  #section-2 .full-menu-button {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
 }
 #section-2 .row {
   -webkit-box-orient: horizontal;
@@ -618,23 +698,15 @@ section {
 #section-2 .menu {
   text-align: center;
   font-size: 0.8em;
-  width: 100%;
-  margin: auto;
-}
-@media (min-width: 768px) {
-  #section-2 .menu {
-    width: auto;
-  }
 }
 #section-2 p.drink-name {
   font-family: calgary-script-ot, sans-serif;
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: 2px;
   color: #d5b261;
   font-weight: 400;
   margin: auto;
   margin-top: 2em;
-  margin-bottom: 0.4em;
 }
 #section-2 p.drink-ingredients {
   color: #dfdfdf;
@@ -666,8 +738,7 @@ section {
 }
 #section-2 .button {
   font-family: montserrat, sans-serif;
-  font-size: 0.9em;
-  padding-top: 12px;
+  font-size: 0.7em;
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
 }
@@ -679,6 +750,7 @@ section {
   background-color: #f2f2f2;
   z-index: 6;
   position: relative;
+  padding-top: 5em;
 }
 #section-3 a {
   text-decoration: none;
@@ -799,6 +871,7 @@ section {
   background-color: #f2f2f2;
   z-index: 2;
   position: relative;
+  padding-top: 4em;
 }
 #section-4 p {
   font-family: playfair-display, serif;
@@ -829,9 +902,6 @@ section {
   -webkit-transition: 250ms ease;
   transition: 250ms ease;
 }
-#section-4 .coffeeimg {
-  margin-top: 4em;
-}
 @media (min-width: 768px) {
   #section-4 .coffeeimg {
     display: none;
@@ -854,11 +924,11 @@ section {
 #section-5 {
   background-image: url(../img/section1_background.png);
   position: relative;
-  padding-bottom: 3em;
+  padding-bottom: 4em;
+  padding-top: 4em;
 }
 @media (min-width: 768px) {
   #section-5 {
-    padding: 1em 0;
     z-index: 3;
   }
 }
@@ -893,8 +963,8 @@ section {
   width: auto;
 }
 #section-5 img.left {
-  -webkit-transform: translate(14.3em);
-          transform: translate(14.3em);
+  -webkit-transform: translate(17.9em);
+          transform: translate(17.9em);
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -920,8 +990,8 @@ section {
   }
 }
 #section-5 img.right {
-  -webkit-transform: translate(-14.3em);
-          transform: translate(-14.3em);
+  -webkit-transform: translate(-17.9em);
+          transform: translate(-17.9em);
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -1037,9 +1107,22 @@ section {
   background-size: cover;
   margin: auto;
   padding-top: 10em;
-  padding-bottom: 5em;
+  padding-bottom: 0;
   z-index: -1;
   position: relative;
+}
+@media (min-width: 768px) {
+  #section-6 {
+    padding-top: 14em;
+    padding-bottom: 9.5em;
+  }
+}
+#section-6 h2 {
+  color: #d5b261;
+  font-family: calgary-script-ot, sans-serif;
+  font-size: 10em;
+  font-weight: 200;
+  line-height: 0;
 }
 #section-6 h3 {
   color: #9c9c9c;
@@ -1130,15 +1213,29 @@ section {
   background-image: url(../img/section1_background.png);
   position: relative;
   z-index: 1;
+  padding-top: 4em;
 }
 @media (min-width: 768px) {
   #section-7 {
     margin: auto;
-    padding: 1em 0;
   }
 }
 #section-7 .right {
   text-align: right;
+}
+#section-7 .right h2 {
+  color: #d5b261;
+  font-family: calgary-script-ot, sans-serif;
+  font-weight: 200;
+  font-size: 10em;
+  line-height: 0;
+  margin-top: 0.5em;
+  margin-right: 0.4em;
+}
+@media (min-width: 768px) {
+  #section-7 .right h2 {
+    margin-right: 0;
+  }
 }
 #section-7 .right h3 {
   font-family: montserrat, helvetica, arial;
@@ -1146,7 +1243,7 @@ section {
   font-size: 2em;
   font-style: italic;
   font-weight: 400;
-  line-height: 3.5vh;
+  line-height: 1;
   margin: auto;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -1157,18 +1254,16 @@ section {
 @media (min-width: 768px) {
   #section-7 .right h3 {
     font-size: 1.5em;
-    line-height: 5vh;
   }
 }
 @media (min-width: 1050px) {
   #section-7 .right h3 {
     font-size: 1.5em;
-    line-height: 5vh;
   }
 }
 #section-7 .right .entrance {
   color: #d5b261;
-  line-height: 3vh;
+  line-height: 1;
   margin: auto;
   margin-bottom: 1em;
   font-size: 1.3em;
@@ -1180,26 +1275,16 @@ section {
 }
 #section-7 .right .hours {
   margin: auto;
-  line-height: 2.2vh;
+  line-height: 1.1;
   font-size: 1.1em;
 }
 @media (min-width: 768px) {
   #section-7 .right .hours {
     font-size: 0.9em;
-    line-height: 2vh;
   }
 }
 #section-7 address a {
   text-decoration: none;
-}
-#section-7 img {
-  max-width: 100%;
-  margin: auto;
-  margin-right: -0.5em;
-}
-#section-7 .button {
-  margin-left: auto;
-  margin-right: auto;
 }
 #section-7 .left-splatter-1 {
   display: none;
@@ -1310,6 +1395,10 @@ section {
   left: -9999px;
 }
 
+.text-centered {
+  text-align: center;
+}
+
 /* SITE-HEADER SITE-NAV */
 .site-header .site-nav a {
   color: #181818;
@@ -1370,6 +1459,7 @@ section {
   background-image: url(../img/navbackground.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #181818;
   position: fixed;
   top: 0;
   right: 0;
@@ -1388,8 +1478,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-clip-path: circle(0px at calc(100% - 2em) 2em);
-          clip-path: circle(0px at calc(100% - 2em) 2em);
+  -webkit-clip-path: circle(0px at calc(100% - 2.15em) 2.1em);
+          clip-path: circle(0px at calc(100% - 2.15em) 2.1em);
   -webkit-transition: 0.7s all ease-in-out;
   transition: 0.7s all ease-in-out;
   font-family: montserrat, helvetica, arial;
