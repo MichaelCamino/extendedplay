@@ -14,7 +14,8 @@
   padding: 1em;
   margin: 1em 0;
   box-shadow: 0 5px 15px rgba(0,0,0,0.20);
-  border-radius: 10px;
+  border-radius: 25px;
+  letter-spacing: 1px;
 
   span {
       position: relative;
@@ -23,7 +24,7 @@
 
   &:hover {
       color: $color-background-dark;
-      transition: all 1s ease-in-out;
+      transition: all .4s ease-in-out;
   }
 
 &:after {
@@ -34,7 +35,7 @@
   height: 490%;
   width: 140%;
   background: $color-background-light;
-  transition: all .6s ease-in-out;
+  transition: all .5s ease-in-out;
   transform: translateX(-110%) translateY(-10%) rotate(45deg);
 }
 

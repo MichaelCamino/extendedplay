@@ -11,13 +11,34 @@ lottie.loadAnimation({
 // LOGO ANIMATION
 
 
-// const animation1 = lottie.loadAnimation({
-//     container: herologo, // the dom element that will contain the animation
-//     renderer: 'svg',
-//     loop: false,
-//     autoplay: true,
-//     path: 'js/EP_logo/data.json' // the path to the animation json
-// });
+const animation1 = lottie.loadAnimation({
+    container: logo, // the dom element that will contain the animation
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    path: 'js/EP_logo/data.json' // the path to the animation json
+});
+
+const io_options_logo = {
+    // root: document.body,
+    rootMargin: '-25% 0px -25% 0px',
+    threshold: 0
+};
+
+const myobserver_logo = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animation1.play();
+
+        } else {
+            animation1.stop();
+
+        }
+    });
+}, io_options_logo);
+document.querySelectorAll('#section-8').forEach((div) => {
+    myobserver_logo.observe(div);
+});
 
 
 

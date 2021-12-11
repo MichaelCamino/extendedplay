@@ -63,6 +63,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-color: $color-text-body;
+        background-position: 20%;
         position: fixed;
         top: 0;
         right: 0;
@@ -77,6 +78,9 @@
         font-family: $font-family-sans;
         font-weight: 300;
         z-index: 30;
+        @media (min-width: $breakpoint-small) {
+        background-position: 0;
+        }
 
     }
 
