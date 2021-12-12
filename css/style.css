@@ -771,7 +771,7 @@ section {
 }
 #section-2 p.drink-ingredients {
   color: #dfdfdf;
-  font-size: 1.3em;
+  font-size: 1.4em;
   line-height: 1.2;
   font-family: playfair-display, serif;
   font-weight: 400;
@@ -785,6 +785,7 @@ section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 7em;
   }
 }
 #section-2 .wreathpic {
@@ -1032,7 +1033,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f2f2f2;
-  z-index: 3;
+  z-index: 1;
   position: relative;
   padding-top: 6em;
   padding-bottom: 4em;
@@ -1137,7 +1138,7 @@ section {
 }
 @media (min-width: 768px) {
   #section-5 {
-    z-index: 3;
+    z-index: 2;
   }
 }
 #section-5 .row {
@@ -1252,7 +1253,7 @@ section {
 @media (min-width: 768px) {
   #section-5 .left-splatter-2 {
     position: absolute;
-    z-index: -1;
+    z-index: 3;
     right: -15em;
     bottom: -40em;
     display: block;
@@ -1265,9 +1266,53 @@ section {
 @media (min-width: 768px) {
   #section-5 .left-splatter-3 {
     position: absolute;
-    z-index: -1;
+    z-index: 3;
     right: -20em;
     bottom: -40em;
+    display: block;
+    opacity: 0.5;
+  }
+}
+#section-5 .left-splatter-4 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-5 .left-splatter-4 {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    max-width: 80%;
+    height: auto;
+    left: -10em;
+    top: -50em;
+    opacity: 0.5;
+  }
+}
+#section-5 .left-splatter-5 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-5 .left-splatter-5 {
+    position: absolute;
+    z-index: 3;
+    max-width: 80%;
+    height: auto;
+    left: -20em;
+    top: -30em;
+    display: block;
+    opacity: 0.5;
+  }
+}
+#section-5 .left-splatter-6 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-5 .left-splatter-6 {
+    position: absolute;
+    z-index: -1;
+    max-width: 80%;
+    left: -15em;
+    top: -40em;
     display: block;
     opacity: 0.5;
   }
@@ -1649,9 +1694,26 @@ section {
   margin-top: 1em;
 }
 #section-8 #logo {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  display: none;
+}
+@media (min-width: 768px) {
+  #section-8 #logo {
+    display: block;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    padding-bottom: 2em;
+  }
+}
+#section-8 .logopic {
+  display: block;
+  max-width: 80%;
+  margin: auto;
   padding-bottom: 2em;
+}
+@media (min-width: 768px) {
+  #section-8 .logopic {
+    display: none;
+  }
 }
 
 /* HERO SECTION */
