@@ -963,7 +963,7 @@ section {
     position: absolute;
     z-index: 2;
     max-width: 80%;
-    right: -25em;
+    right: -15em;
     bottom: -32em;
     display: block;
     opacity: 0.5;
@@ -1034,7 +1034,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f2f2f2;
-  z-index: 2;
+  z-index: 3;
   position: relative;
   padding-top: 6em;
   padding-bottom: 4em;
