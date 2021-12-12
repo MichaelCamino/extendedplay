@@ -449,7 +449,7 @@ section {
             max-width: 80%;
             height: auto;
             left: -5em;
-            top: -22em;
+            top: -40em;
             opacity: .5;
         }
     }
@@ -461,8 +461,8 @@ section {
             z-index: -1;
             max-width: 80%;
             height: auto;
-            left: 0;
-            top: -22em;
+            left: -15em;
+            top: -40em;
             display: block;
             opacity: .5;
         }
@@ -474,8 +474,49 @@ section {
             position: absolute;
             z-index: -1;
             max-width: 80%;
-            left: 0;
-            top: -22em;
+            left: -10em;
+            top: -40em;
+            display: block;
+            opacity: .5;
+        }
+    }
+
+    .right-splatter-1 {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            max-width: 80%;
+            height: auto;
+            right: -30em;
+            bottom: -40em;
+            opacity: .5;
+        }
+    }
+
+    .right-splatter-2 {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            position: absolute;
+            z-index: 1;
+            max-width: 80%;
+            height: auto;
+            right: -20em;
+            bottom: -40em;
+            display: block;
+            opacity: .5;
+        }
+    }
+
+    .right-splatter-3 {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            position: absolute;
+            z-index: 2;
+            max-width: 80%;
+            right: -25em;
+            bottom: -32em;
             display: block;
             opacity: .5;
         }
@@ -594,6 +635,47 @@ section {
 
     }
 
+    .left-splatter-1 {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            display: block;
+            position: absolute;
+            z-index: 5;
+            max-width: 80%;
+            height: auto;
+            left: -10em;
+            top: 0;
+            opacity: .5;
+        }
+    }
+
+    .left-splatter-2 {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            position: absolute;
+            z-index: 5;
+            max-width: 80%;
+            height: auto;
+            left: -20em;
+            top: 0;
+            display: block;
+            opacity: .5;
+        }
+    }
+
+    .left-splatter-3 {
+        display: none;
+        @media (min-width: $breakpoint-small) {
+            position: absolute;
+            z-index: -1;
+            max-width: 80%;
+            left: -15em;
+            top: 0;
+            display: block;
+            opacity: .5;
+        }
+    }
+
     
 }
 
@@ -702,17 +784,10 @@ section {
             position: absolute;
             z-index: -1;
             right: -25em;
-            bottom: -32em;
+            bottom: -40em;
             opacity: .5;
         }
-        @media (min-width: $breakpoint-large) {
-            right: -15em;
-            bottom: -15em;
-        }
-        @media (min-width: $breakpoint-xlarge) {
-            right: -25em;
-            bottom: 0;
-        }
+        
     }
 
     .left-splatter-2 {
@@ -721,18 +796,11 @@ section {
             position: absolute;
             z-index: -1;
             right: -15em;
-            bottom: -15em;
+            bottom: -40em;
             display: block;
             opacity: .5;
         }
-        @media (min-width: $breakpoint-large) {
-            right: 0;
-            bottom: 0;
-        }
-        @media (min-width: $breakpoint-xlarge) {
-            right: 15em;
-            bottom: 0;
-        }
+       
     }
 
     .left-splatter-3 {
@@ -740,19 +808,12 @@ section {
         @media (min-width: $breakpoint-small) {
             position: absolute;
             z-index: -1;
-            right: -10em;
-            bottom: -15em;
+            right: -20em;
+            bottom: -40em;
             display: block;
             opacity: .5;
         }
-        @media (min-width: $breakpoint-large) {
-            right: -10em;
-            bottom: 5em;
-        }
-        @media (min-width: $breakpoint-xlarge) {
-            right: 5em;
-            bottom: 0;
-        }
+        
     }
 
     .section-divider-top {

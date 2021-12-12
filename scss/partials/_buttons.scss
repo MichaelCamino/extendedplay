@@ -7,13 +7,13 @@
   outline: none;
   overflow: hidden;
   position: relative;
-  color: $color-background-dark;
+  color: rgb(54, 54, 54);
   font-weight: 700;
   font-size: 15px;
   background-color: $color-accent-light ;
   padding: 1em;
   margin: 1em 0;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  box-shadow:  inset 0 -2px 4px $color-background-dark;
   border-radius: 25px;
   letter-spacing: 1px;
 
