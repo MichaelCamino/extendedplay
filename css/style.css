@@ -482,6 +482,7 @@ section {
   right: 0;
   width: 100%;
   height: 10%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   #section-1 .section-divider-bottom {
@@ -975,6 +976,7 @@ section {
   right: 0;
   width: 100%;
   height: 10%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   #section-3 .section-divider-top {
@@ -999,6 +1001,7 @@ section {
   right: 0;
   width: 100%;
   height: 10%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   #section-3 .section-divider-bottom {
@@ -1324,6 +1327,7 @@ section {
   right: 0;
   width: 100%;
   height: 10%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   #section-5 .section-divider-top {
@@ -1348,6 +1352,7 @@ section {
   right: 0;
   width: 100%;
   height: 10%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   #section-5 .section-divider-bottom {
@@ -1504,6 +1509,7 @@ section {
   right: 0;
   width: 100%;
   height: 10%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   #section-7 .section-divider-top {
@@ -1528,6 +1534,7 @@ section {
   right: 0;
   width: 100%;
   height: 10%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   #section-7 .section-divider-bottom {
