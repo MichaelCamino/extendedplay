@@ -449,7 +449,7 @@ section {
             z-index: -1;
             max-width: 80%;
             height: auto;
-            left: -5em;
+            left: -15em;
             top: -40em;
             opacity: .5;
         }
@@ -1006,7 +1006,7 @@ section {
 
     #drinkfooter {
         display: none;
-        transform: rotateY(180deg) rotate(-15deg) scale(1.8);
+        transform: rotateY(180deg) rotate(-15deg) scale(1.5);
         @media (min-width: $breakpoint-small) {
             display: block;
             margin: auto;

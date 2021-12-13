@@ -890,7 +890,7 @@ section {
     z-index: -1;
     max-width: 80%;
     height: auto;
-    left: -5em;
+    left: -15em;
     top: -40em;
     opacity: 0.5;
   }
@@ -1476,8 +1476,8 @@ section {
 }
 #section-6 #drinkfooter {
   display: none;
-  -webkit-transform: rotateY(180deg) rotate(-15deg) scale(1.8);
-          transform: rotateY(180deg) rotate(-15deg) scale(1.8);
+  -webkit-transform: rotateY(180deg) rotate(-15deg) scale(1.5);
+          transform: rotateY(180deg) rotate(-15deg) scale(1.5);
 }
 @media (min-width: 768px) {
   #section-6 #drinkfooter {
