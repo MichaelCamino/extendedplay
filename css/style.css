@@ -1481,8 +1481,8 @@ section {
 }
 #section-6 #drinkfooter {
   display: none;
-  -webkit-transform: rotateY(180deg) rotate(-15deg) scale(1.5);
-          transform: rotateY(180deg) rotate(-15deg) scale(1.5);
+  -webkit-transform: rotateY(180deg) rotate(-15deg) scale(1.3);
+          transform: rotateY(180deg) rotate(-15deg) scale(1.3);
 }
 @media (min-width: 768px) {
   #section-6 #drinkfooter {
