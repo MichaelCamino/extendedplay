@@ -1223,7 +1223,7 @@ section {
   font-family: montserrat, helvetica, arial;
   letter-spacing: 2px;
   line-height: 2.5vh;
-  font-weight: 500;
+  font-weight: 300;
   margin: auto;
 }
 @media (min-width: 768px) {
@@ -1233,8 +1233,8 @@ section {
 }
 #section-5 p.job {
   font-size: 1.3em;
-  font-family: playfair-display, serif;
-  font-weight: 300;
+  font-family: montserrat, helvetica, arial;
+  font-weight: 500;
   margin: auto;
   margin-bottom: 1em;
 }
@@ -1624,11 +1624,11 @@ section {
   line-height: 1;
   margin: auto;
   margin-bottom: 1em;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 @media (min-width: 768px) {
   #section-7 .right .entrance {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
 }
 #section-7 .right .hours {

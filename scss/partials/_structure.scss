@@ -748,7 +748,7 @@ section {
         font-family: $font-family-sans;
         letter-spacing: 2px;
         line-height: 2.5vh;
-        font-weight: 500;
+        font-weight: 300;
         margin: auto;
         @media (min-width: $breakpoint-small) {
         font-size: 1.6em;
@@ -758,8 +758,8 @@ section {
 
     p.job {
         font-size: 1.3em;
-        font-family: $font-family-serif;
-        font-weight: 300;
+        font-family: $font-family-sans;
+        font-weight: 500;
         margin: auto;
         margin-bottom: 1em;
         @media (min-width: $breakpoint-small) {
@@ -1110,14 +1110,14 @@ section {
 
         .entrance {
             @media (min-width: $breakpoint-small) {
-            font-size: 1.1em;
+            font-size: .9em;
             }
 
             color: $color-accent-light;
             line-height: 1;
             margin: auto;
             margin-bottom: 1em;
-            font-size: 1.3em;
+            font-size: 1.2em;
         }
 
 
@@ -1128,7 +1128,7 @@ section {
             margin: auto;
             line-height: 1.1;
             font-size: 1.1em;
-        }
+            }
 
        
 }
