@@ -196,7 +196,7 @@ hr {
 }
 
 .below-coffee {
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 .below-coffee:after {
   -webkit-transition: all 0.5s ease-in-out;
@@ -584,11 +584,6 @@ section {
     margin-bottom: -2em;
   }
 }
-#section-1 p span {
-  font-size: 1.5em;
-  line-height: 0.9;
-  margin-right: -3px;
-}
 #section-1 .right-splatter-1 {
   display: none;
 }
@@ -862,17 +857,12 @@ section {
   max-width: 60%;
   text-align: center;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
 @media (min-width: 768px) {
   #section-3 p {
     margin: auto;
   }
-}
-#section-3 .big-l {
-  font-size: 1.5em;
-  line-height: 0.9;
-  margin-left: -3px;
 }
 @media (min-width: 768px) {
   #section-3 img {
@@ -880,6 +870,7 @@ section {
             transform: scale(1);
     -webkit-transform-origin: right center;
             transform-origin: right center;
+    margin-bottom: 0.5em;
   }
 }
 #section-3 .vinylpic {
@@ -1080,17 +1071,13 @@ section {
   line-height: 1.2;
   margin: auto;
   margin-top: 0.5em;
-  max-width: 60%;
+  max-width: 65%;
   font-weight: 300;
 }
 @media (min-width: 768px) {
   #section-4 p {
     font-size: 1.1em;
   }
-}
-#section-4 .button {
-  position: relative;
-  z-index: 40;
 }
 @media (min-width: 768px) {
   #section-4 .coffeeimg {

@@ -165,11 +165,11 @@ section {
         text-align: center;
         margin: auto;
         margin-bottom: 1em;
-        span {
-            font-size: 1.5em;
-            line-height: .9;
-            margin-right: -3px;
-        }
+        // span {
+        //     font-size: 1.5em;
+        //     line-height: .9;
+        //     margin-right: -3px;
+        // }
     }
 
     .right-splatter-1 {
@@ -398,19 +398,20 @@ section {
         max-width: 60%;
         text-align: center;
         margin: auto;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
 
-    .big-l {
-        font-size: 1.5em;
-        line-height: .9;
-        margin-left: -3px;
-    }
+    // .big-l {
+    //     font-size: 1.5em;
+    //     line-height: .9;
+    //     margin-left: -3px;
+    // }
 
     img {
         @media (min-width: $breakpoint-small) {
             transform: scale(1);
             transform-origin: right center;
+            margin-bottom: .5em;
         }
        
     }  
@@ -596,7 +597,7 @@ section {
         line-height: 1.2;
         margin: auto;
         margin-top: .5em;
-        max-width: 60%;
+        max-width: 65%;
         font-weight: 300;
         @media (min-width: $breakpoint-small) {
             font-size: 1.1em;
@@ -609,13 +610,6 @@ section {
 //     margin-left: -3px;
 // }
 
-    
-
-    
-    .button {
-        position: relative;
-        z-index: 40;
-    }
 
     .coffeeimg {
         @media (min-width: $breakpoint-small) {
